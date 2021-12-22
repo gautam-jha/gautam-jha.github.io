@@ -3,14 +3,20 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "deploy": "rm -rf node_modules/.cache && next build && next export && touch out/.nojekyll && git add out/ && git commit -m \"Deploy Next.js to gh-pages\" && git subtree push --prefix out origin gh-pages",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "export": "next export"
   },
   "dependencies": {
+    "@afiniti/webgl-slider": "0.0.4",
+    "gsap": "^3.9.0",
     "next": "12.0.7",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "sass": "^1.45.1",
+    "three": "^0.135.0"
   },
   "devDependencies": {
     "@types/node": "17.0.2",
