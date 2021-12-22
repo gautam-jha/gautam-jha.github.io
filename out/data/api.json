@@ -1,0 +1,283 @@
+{
+    "slider": [
+        {
+            "Picturehandle": "./slider/bg3.jpg"
+        },
+        {
+            "videoHandle": "./slider/bg.mp4"
+        },
+        {
+            "Picturehandle": "./slider/bg1.jpg"
+        }
+    ],
+    "about": {
+        "aboutImage": "https://avatars.githubusercontent.com/u/16630278?v=4&s=300",
+        "sectionTitle": "About Me",
+        "sectionDescription": "I am Gautam Jha, and I love to create Websites & Apps. Learning a new language or framework or wasting my time playing video games. \n\n I completed my bachelors in Technology at Delhi Technological University ( Formally Known D.C.E).  \n\n At the starting phase of my career I joined a few good startups such as Experiencesaga, Bookmyessay, Biorev, Incubsense. \n\n I have worked as a full-time employee at Amdocs, SHL, Collabera and worked with various technologies like Scylla, Cassandra, Elastic search, Postgresql etc. \n\n I have a great experience in WordPress Theme & Plugin Development, Gutenburg, LEMP, and MERN stack. Developed and delivered complex projects end to end at various organizations."
+    },
+    "skills": {
+        "sectionTitle": "Skills",
+        "sectionDescription": "Here are some of the skills I've acquired over the years.",
+        "skills": [
+            {
+                "name": "HTML5",
+                "level": 90
+            },
+            {
+                "name": "CSS3",
+                "level": 90
+            },
+            {
+                "name": "JavaScript",
+                "level": 80
+            },
+            {
+                "name": "React",
+                "level": 70
+            },
+            {
+                "name": "Node.js",
+                "level": 60
+            },
+            {
+                "name": "Gatsby",
+                "level": 60
+            },
+            {
+                "name": "Git",
+                "level": 60
+            },
+            {
+                "name": "GitHub",
+                "level": 60
+            },
+            {
+                "name": "WordPress",
+                "level": 60
+            },
+            {
+                "name": "PHP",
+                "level": 50
+            },
+            {
+                "name": "MySQL",
+                "level": 50
+            },
+            {
+                "name": "MongoDB",
+                "level": 50
+            },
+            {
+                "name": "Docker",
+                "level": 50
+            },
+            {
+                "name": "AWS",
+                "level": 50
+            },
+            {
+                "name": "Gulp",
+                "level": 50
+            },
+            {
+                "name": "Webpack",
+                "level": 50
+            },
+            {
+                "name": "Babel",
+                "level": 50
+            },
+            {
+                "name": "NPM",
+                "level": 50
+            },
+            {
+                "name": "SASS",
+                "level": 50
+            },
+            {
+                "name": "Bootstrap",
+                "level": 50
+            },
+            {
+                "name": "WordPress",
+                "level": 50
+            },
+            {
+                "name": "Joomla",
+                "level": 50
+            },
+            {
+                "name": "Magento",
+                "level": 50
+            },
+            {
+                "name": "Shopify",
+                "level": 50
+            },
+            {
+                "name": "WooCommerce",
+                "level": 50
+            },
+            {
+                "name": "Photoshop",
+                "level": 50
+            },
+            {
+                "name": "Illustrator",
+                "level": 50
+            },
+            {
+                "name": "InDesign",
+                "level": 50
+            },
+            {
+                "name": "After Effects",
+                "level": 50
+            },
+            {
+                "name": "Premiere Pro",
+                "level": 50
+            },
+            {
+                "name": "After Effects",
+                "level": 50
+            },
+            {
+                "name": "Premiere Pro",
+                "level": 50
+            },
+            {
+                "name": "After Effects",
+                "level": 50
+            },
+            {
+                "name": "Premiere Pro",
+                "level": 50
+            },
+            {
+                "name": "After Effects",
+                "level": 50
+            },
+            {
+                "name": "Premiere Pro",
+                "level": 50
+            },
+            {
+                "name": "After Effects",
+                "level": 50
+            },
+            {
+                "name": "Premiere Pro",
+                "level": 50
+            },
+            {
+                "name": "After Effects",
+                "level": 50
+            },
+            {
+                "name": "Premiere Pro",
+                "level": 50
+            },
+            {
+                "name": "After Effects",
+                "level": 50
+            },
+            {
+                "name": "Premiere Pro",
+                "level": 50
+            },
+            {
+                "name": "After Effects",
+                "level": 50
+            },
+            {
+                "name": "Premiere Pro",
+                "level": 50
+            },
+            {
+                "name": "After Effects",
+                "level": 50
+            },
+            {
+                "name": "Premiere Pro",
+                "level": 50
+            },
+            {
+                "name": "After Effects",
+                "level": 50
+            }
+        ]
+    },
+    "work": {
+        "sectionTitle": "Work Experiences",
+        "sectionDescription": "Here are some of the work experiences I've had.",
+        "experiences": [
+            {
+                "company": "Freelance",
+                "position": "Web Developer",
+                "website": "",
+                "startDate": "2018-01-01",
+                "endDate": "2018-12-31",
+                "logo": "",
+                "summary": "",
+                "highlights": [
+                    "",
+                    ""
+                ]
+            },
+            {
+                "company": "Freelance",
+                "position": "Web Developer",
+                "website": "",
+                "startDate": "2018-01-01",
+                "endDate": "2018-12-31",
+                "summary": "",
+                "logo": "",
+                "highlights": [
+                    "",
+                    ""
+                ]
+            },
+            {
+                "company": "Freelance",
+                "position": "Web Developer",
+                "website": "",
+                "startDate": "2018-01-01",
+                "endDate": "2018-12-31",
+                "summary": "",
+                "logo": "",
+                "highlights": [
+                    "",
+                    ""
+                ]
+            },
+            {
+                "company": "Freelance",
+                "position": "Web Developer",
+                "website": "",
+                "startDate": "2018-01-01",
+                "endDate": "2018-12-31",
+                "logo": "",
+                "summary": "",
+                "highlights": [
+                    "",
+                    ""
+                ]
+            },
+            {
+                "company": "Freelance",
+                "position": "Web Developer",
+                "website": "",
+                "startDate": "2018-01-01",
+                "endDate": "2018-12-31",
+                "logo": "",
+                "summary": "",
+                "highlights": [
+                    "",
+                    ""
+                ]
+            }
+        ]
+    }
+}
