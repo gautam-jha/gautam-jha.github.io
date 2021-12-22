@@ -1,4 +1,6 @@
 /** @type {import('next').NextConfig} */
+const { server } = require("./config")
+
 const path = require('path');
 
 module.exports = {
