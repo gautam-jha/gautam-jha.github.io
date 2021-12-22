@@ -2,6 +2,18 @@
   position: relative;
   top: -115px;
   
+  @media screen and (max-width: 580px) {
+    max-height: 50vh;
+    >div{
+      max-height: 50vh;
+      >div{
+        max-height: 50vh;
+        >canvas{
+          max-height: 50vh;
+        }
+      }
+    }
+  }
   .bannerInner{
     position: relative;
     padding: 10px;
@@ -12,7 +24,11 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-      
+    
+    @media screen and (max-width: 1024px) {
+      min-width: 85vw;
+    }
+    
     // &:before{
     //   position: absolute;
     //   content: '';
@@ -36,6 +52,7 @@
   font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
   font-size: clamp(14px,5vw,16px);
   font-weight: 400;
+  text-shadow: 1px 0 rgb(0 0 0 / 70%);
 }
 
 .bannerText__heading2, .bannerText__heading3 {
@@ -44,6 +61,7 @@
   color: #e0e3e9;
   line-height: 1.1;
   font-size: clamp(40px, 8vw, 80px);
+  text-shadow: 1px 0 rgb(0 0 0 / 70%);
 }
 
 .bannerText__heading3{
@@ -51,4 +69,23 @@
   color: #8892b0;
   line-height: 0.9;
   font-size: clamp(30px, 6vw, 60px);
+}
+
+.aboutContainer {
+  padding: 20px 0;
+  max-width: 1060px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  @media screen and (max-width: 580px) {
+    padding: 0 20px;
+  }
+}
+.aboutContent{
+  display: flex;
+  gap: 40px;
+  @media screen and (max-width: 580px) {
+    flex-direction: column;
+  }
 }

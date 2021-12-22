@@ -1,30 +1,18 @@
-import type { NextPage } from "next";
+import type { NextPage, NextPageContext } from "next";
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.scss";
 import WebglSlider from "@afiniti/webgl-slider";
 import { Header } from "../components/Header";
+import { server } from "../config";
+import { MockProp } from "../config/interface";
 
-interface SliderImage {
-  Picturehandle: string;
-}
-interface SliderVideo {
-  videoHandle: string;
-}
 
-const data: Array<SliderImage | SliderVideo> = [
-  // {
-  //   Picturehandle: "./bg2.jpg",
-  // },
-  {
-    Picturehandle: "./bg1.jpg",
-  },
-  {
-    videoHandle: "./bg.mp4",
-  },
-];
+const Home = (props: MockProp) => {
+  console.log("data", props);
 
-const Home: NextPage = () => {
+  const { data: { slider, about } } = props;
+
   return (
     <div className={styles.container}>
       <Head>
@@ -41,11 +29,10 @@ const Home: NextPage = () => {
           <WebglSlider
             fps={25}
             autoplay
-            effect={6} // give number between 1 to 8
-            iterations={5}
+            effect={8} // give number between 1 to 8
             slideSpeed={1.6}
-            data={data}
-            autoplaySpeed={8000}
+            data={slider}
+            autoplaySpeed={3000}
             initialSlideIndex={0}
             onSlideStart={(currentIndex: any, nextIndex: any, direction: any) => {
               console.log(currentIndex, nextIndex, direction);
@@ -69,8 +56,21 @@ const Home: NextPage = () => {
       </main>
 
       <div id="about" className={styles.fullScreen}>
-        ABOUT
+        <div className={styles.aboutContainer}>
+          <div className={styles.aboutInner}>
+            <h2 className={styles.aboutHeading}>{about.sectionTitle}</h2>
+            <div className={styles.aboutContent}>
+                <p className={styles.aboutText}>
+                  {about.sectionDescription.split("\n\n").map((item: string, index: number) => {
+                    return <><span>{item}</span><br /><br /></>;
+                  })}
+                </p>
+                <img src={about.aboutImage} alt="gautamjha" className={styles.aboutImage} />
+            </div>
+          </div>
+        </div>
       </div>
+
       <div id="skills" className={styles.fullScreen}>
         Skills
       </div>
@@ -83,3 +83,13 @@ const Home: NextPage = () => {
 };
 
 export default Home;
+
+Home.getInitialProps = async () => {
+  // fetch api.json and return data
+  const data = await fetch(server + "/data/api.json").then(res => res.json());
+  return {
+
+    data: data,
+
+  };
+}

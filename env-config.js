@@ -1,5 +1,5 @@
-const prod = process.env.NODE_ENV === 'production'
+const { server } = require("./config")
 
 module.exports = {
-  'process.env.BACKEND_URL': prod ? 'https://gautam-jha.github.io/' : '',
+  'process.env.BACKEND_URL': server,
 }
