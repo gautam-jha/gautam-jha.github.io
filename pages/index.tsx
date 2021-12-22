@@ -9,7 +9,6 @@ import { MockProp } from "../config/interface";
 
 
 const Home = (props: MockProp) => {
-  console.log("data", props);
 
   const { data: { slider, about } } = props;
 
