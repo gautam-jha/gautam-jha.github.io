@@ -22,6 +22,7 @@ const Home = (props: MockProp) => {
           name="description"
           content="Gautam Jha, Programmer, Javascript / PHP / Python Developer, Student from DTU(Formally DCE), Worked with Amdocs, SHL, 9Yards Technology, Collabera."
         />
+        <meta name="google-site-verification" content="uPoZCOjKbbtIVTSGl3SfL_Etk7oOZfwAyXIoMT1QGj4" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
