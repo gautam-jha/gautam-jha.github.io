@@ -56,9 +56,9 @@ const Home = (props: MockProp) => {
         </div>
       </div>
 
-      <About {...about} />
+      {about && <About {...about} />}
 
-      <Skill {...skills} />
+      {skills && <Skill {...skills} />}
 
       <div id="experiece" className={styles.fullScreen}>
         {/* Exp */}
