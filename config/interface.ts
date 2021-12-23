@@ -4,20 +4,22 @@
         videoHandle: string;
     }
 
-    interface About {
+    export interface About {
         aboutImage: string;
         sectionTitle: string;
         sectionDescription: string;
     }
 
-    interface Skill {
+    export interface Skill {
         name: string;
         level: number;
+        category: string;
     }
 
-    interface Skills {
+    export interface Skills {
         sectionTitle: string;
         sectionDescription: string;
+        skillCategory: string[];
         skills: Skill[];
     }
 

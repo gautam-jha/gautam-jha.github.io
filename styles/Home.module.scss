@@ -70,22 +70,3 @@
   line-height: 0.9;
   font-size: clamp(30px, 6vw, 60px);
 }
-
-.aboutContainer {
-  padding: 20px 0;
-  max-width: 1060px;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  @media screen and (max-width: 580px) {
-    padding: 0 20px;
-  }
-}
-.aboutContent{
-  display: flex;
-  gap: 40px;
-  @media screen and (max-width: 580px) {
-    flex-direction: column;
-  }
-}
