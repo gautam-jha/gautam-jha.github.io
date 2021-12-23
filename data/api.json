@@ -18,194 +18,180 @@
     "skills": {
         "sectionTitle": "Skills",
         "sectionDescription": "Here are some of the skills I've acquired over the years.",
+        "skillCategory":[
+            "Language",
+            "Web Technology",
+            "Framework",
+            "Version Control",
+            "Database",
+            "Tools",
+            "DevOps"
+        ],
         "skills": [
             {
                 "name": "HTML5",
-                "level": 90
+                "level": 90,
+                "category": "Web Technology"
             },
             {
                 "name": "CSS3",
-                "level": 90
+                "level": 90,
+                "category": "Web Technology"
             },
             {
                 "name": "JavaScript",
-                "level": 80
+                "level": 80,
+                "category": "Language"
             },
             {
                 "name": "React",
-                "level": 70
+                "level": 70,
+                "category": "Framework"
             },
             {
                 "name": "Node.js",
-                "level": 60
-            },
-            {
-                "name": "Gatsby",
-                "level": 60
+                "level": 60,
+                "category": "Framework"
             },
             {
                 "name": "Git",
-                "level": 60
+                "level": 60,
+                "category": "Version Control"
             },
             {
                 "name": "GitHub",
-                "level": 60
+                "level": 60,
+                "category": "Version Control"
+            },
+            {
+                "name": "Bitbucket",
+                "level": 60,
+                "category": "Version Control"
+            },
+            {
+                "name": "Gitlab",
+                "level": 60,
+                "category": "Version Control"
             },
             {
                 "name": "WordPress",
-                "level": 60
+                "level": 60,
+                "category": "CMS"
             },
             {
                 "name": "PHP",
-                "level": 50
+                "level": 50,
+                "category": "Language"
             },
             {
                 "name": "MySQL",
-                "level": 50
+                "level": 50,
+                "category": "Database"
             },
             {
                 "name": "MongoDB",
-                "level": 50
+                "level": 50,
+                "category": "Database"
             },
             {
                 "name": "Docker",
-                "level": 50
+                "level": 50,
+                "category": "DevOps"
             },
             {
                 "name": "AWS",
-                "level": 50
+                "level": 50,
+                "category": "DevOps"
             },
             {
                 "name": "Gulp",
-                "level": 50
+                "level": 50,
+                "category": "DevOps"
             },
             {
                 "name": "Webpack",
-                "level": 50
+                "level": 50,
+                "category": "DevOps"
             },
             {
                 "name": "Babel",
-                "level": 50
+                "level": 50,
+                "category": "DevOps"
             },
             {
                 "name": "NPM",
-                "level": 50
+                "level": 50,
+                "category": "DevOps"
             },
             {
                 "name": "SASS",
-                "level": 50
+                "level": 50,
+                "category": "Web Technology"
             },
             {
                 "name": "Bootstrap",
-                "level": 50
-            },
-            {
-                "name": "WordPress",
-                "level": 50
+                "level": 50,
+                "category": "Web Technology"
             },
             {
                 "name": "Joomla",
-                "level": 50
+                "level": 50,
+                "category": "CMS"
             },
             {
                 "name": "Magento",
-                "level": 50
+                "level": 50,
+                "category": "CMS"
             },
             {
                 "name": "Shopify",
-                "level": 50
+                "level": 50,
+                "category": "CMS"
             },
             {
                 "name": "WooCommerce",
-                "level": 50
+                "level": 50,
+                "category": "CMS"
             },
             {
-                "name": "Photoshop",
-                "level": 50
+                "name":"Python",
+                "level":50,
+                "category":"Language"
             },
             {
-                "name": "Illustrator",
-                "level": 50
+                "name":"FastAPI",
+                "level":50,
+                "category":"Framework"
             },
             {
-                "name": "InDesign",
-                "level": 50
+                "name": "JQuery",
+                "level":50,
+                "category":"JS Library"
             },
             {
-                "name": "After Effects",
-                "level": 50
+                "name": "Next.Js",
+                "level":50,
+                "category":"Framework"
             },
             {
-                "name": "Premiere Pro",
-                "level": 50
+                "name": "D3/Chart.js",
+                "level":50,
+                "category":"JS Library"
+            },
+            {   
+                "name":"underscore",
+                "level":50,
+                "category":"JS Library"
             },
             {
-                "name": "After Effects",
-                "level": 50
+                "name": "Guttenberg",
+                "level":50,
+                "category":"CMS"
             },
             {
-                "name": "Premiere Pro",
-                "level": 50
-            },
-            {
-                "name": "After Effects",
-                "level": 50
-            },
-            {
-                "name": "Premiere Pro",
-                "level": 50
-            },
-            {
-                "name": "After Effects",
-                "level": 50
-            },
-            {
-                "name": "Premiere Pro",
-                "level": 50
-            },
-            {
-                "name": "After Effects",
-                "level": 50
-            },
-            {
-                "name": "Premiere Pro",
-                "level": 50
-            },
-            {
-                "name": "After Effects",
-                "level": 50
-            },
-            {
-                "name": "Premiere Pro",
-                "level": 50
-            },
-            {
-                "name": "After Effects",
-                "level": 50
-            },
-            {
-                "name": "Premiere Pro",
-                "level": 50
-            },
-            {
-                "name": "After Effects",
-                "level": 50
-            },
-            {
-                "name": "Premiere Pro",
-                "level": 50
-            },
-            {
-                "name": "After Effects",
-                "level": 50
-            },
-            {
-                "name": "Premiere Pro",
-                "level": 50
-            },
-            {
-                "name": "After Effects",
-                "level": 50
+                "name":"Putty",
+                "level":50,
+                "category":"Tools"
             }
         ]
     },
