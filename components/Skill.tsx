@@ -12,6 +12,7 @@ export const Skill = (props: Skills) => {
                         <h2>{sectionTitle}</h2>
                         <h4>{sectionDescription}</h4>
                     </div>
+                    <div className={styles.skills__category}>
                     {skillCategory && skillCategory.map((category: string, index: number) => (
                         <div className={styles.skills__container} key={index}>
                             <h3 className={styles.skills__category}>{category}</h3>
@@ -34,7 +35,7 @@ export const Skill = (props: Skills) => {
                             </div>
                         </div>
                     ))}
-
+                    </div>
                 </div>
             </div>
 

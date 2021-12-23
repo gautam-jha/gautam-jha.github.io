@@ -19,11 +19,11 @@
         "sectionTitle": "Skills",
         "sectionDescription": "Here are some of the skills I've acquired over the years.",
         "skillCategory":[
-            "Language",
-            "Web Technology",
-            "Framework",
-            "Version Control",
-            "Database",
+            "Languages",
+            "Web Technologies",
+            "Frameworks",
+            "Version Control Systems",
+            "Databases",
             "Tools",
             "DevOps"
         ],
@@ -31,47 +31,47 @@
             {
                 "name": "HTML5",
                 "level": 90,
-                "category": "Web Technology"
+                "category": "Web Technologies"
             },
             {
                 "name": "CSS3",
                 "level": 90,
-                "category": "Web Technology"
+                "category": "Web Technologies"
             },
             {
                 "name": "JavaScript",
                 "level": 80,
-                "category": "Language"
+                "category": "Languages"
             },
             {
                 "name": "React",
                 "level": 70,
-                "category": "Framework"
+                "category": "Frameworks"
             },
             {
                 "name": "Node.js",
                 "level": 60,
-                "category": "Framework"
+                "category": "Frameworks"
             },
             {
                 "name": "Git",
                 "level": 60,
-                "category": "Version Control"
+                "category": "Version Control Systems"
             },
             {
                 "name": "GitHub",
                 "level": 60,
-                "category": "Version Control"
+                "category": "Version Control Systems"
             },
             {
                 "name": "Bitbucket",
                 "level": 60,
-                "category": "Version Control"
+                "category": "Version Control Systems"
             },
             {
                 "name": "Gitlab",
                 "level": 60,
-                "category": "Version Control"
+                "category": "Version Control Systems"
             },
             {
                 "name": "WordPress",
@@ -81,17 +81,17 @@
             {
                 "name": "PHP",
                 "level": 50,
-                "category": "Language"
+                "category": "Languages"
             },
             {
                 "name": "MySQL",
                 "level": 50,
-                "category": "Database"
+                "category": "Databases"
             },
             {
                 "name": "MongoDB",
                 "level": 50,
-                "category": "Database"
+                "category": "Databases"
             },
             {
                 "name": "Docker",
@@ -126,12 +126,12 @@
             {
                 "name": "SASS",
                 "level": 50,
-                "category": "Web Technology"
+                "category": "Web Technologies"
             },
             {
                 "name": "Bootstrap",
                 "level": 50,
-                "category": "Web Technology"
+                "category": "Web Technologies"
             },
             {
                 "name": "Joomla",
@@ -156,12 +156,12 @@
             {
                 "name":"Python",
                 "level":50,
-                "category":"Language"
+                "category":"Languages"
             },
             {
                 "name":"FastAPI",
                 "level":50,
-                "category":"Framework"
+                "category":"Frameworks"
             },
             {
                 "name": "JQuery",
@@ -171,7 +171,7 @@
             {
                 "name": "Next.Js",
                 "level":50,
-                "category":"Framework"
+                "category":"Frameworks"
             },
             {
                 "name": "D3/Chart.js",

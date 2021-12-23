@@ -35,6 +35,10 @@ const Home = (props: MockProp) => {
             data={slider}
             autoplaySpeed={3000}
             initialSlideIndex={0}
+            webglSliderApi={(ref: any) => {
+              // get access to slider's methods
+              console.log("ref", ref);
+            }}
           />
         </div>
         <div className={styles.bannerText}>
