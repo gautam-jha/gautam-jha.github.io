@@ -35,16 +35,6 @@ const Home = (props: MockProp) => {
             data={slider}
             autoplaySpeed={3000}
             initialSlideIndex={0}
-            onSlideStart={(currentIndex: any, nextIndex: any, direction: any) => {
-              console.log(currentIndex, nextIndex, direction);
-            }}
-            onSlideComplete={() => {
-              console.log("complete");
-            }}
-            webglSliderApi={(ref: any) => {
-              // get access to slider's methods
-              console.log("ref", ref);
-            }}
           />
         </div>
         <div className={styles.bannerText}>
@@ -56,9 +46,9 @@ const Home = (props: MockProp) => {
         </div>
       </div>
 
-      {about && <About {...about} />}
+      <About {...about} />
 
-      {skills && <Skill {...skills} />}
+      <Skill {...skills} />
 
       <div id="experiece" className={styles.fullScreen}>
         {/* Exp */}
