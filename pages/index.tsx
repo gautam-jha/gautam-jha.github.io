@@ -85,10 +85,15 @@ export default Home;
 
 Home.getInitialProps = async () => {
   // fetch api.json and return data
-  const data = await fetch(server + "/data/api.json").then(res => res.json());
+  let data = []
+  try{
+    data = await fetch(server + "/data/api.json").then(res => res.json());
+  }catch(e){
+    console.log(e);
+  }
   return {
 
-    data: data,
+    data: data ?? [],
 
   };
 }
