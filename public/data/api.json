@@ -1,8 +1,8 @@
 {
     "banner": {
-        "text1":"Hello, I am", 
-        "text2":"Gautam Jha.", 
-        "text3":"A Full-Stack Developer"
+        "text1": "Hello, I am",
+        "text2": "Gautam Jha.",
+        "text3": "A Full-Stack Developer"
     },
     "slider": [
         {
@@ -23,7 +23,7 @@
     "skills": {
         "sectionTitle": "Skills",
         "sectionDescription": "Here are some of the skills I've acquired over the years.",
-        "skillCategory":[
+        "skillCategory": [
             "Languages",
             "Web Technologies",
             "Frameworks",
@@ -159,44 +159,44 @@
                 "category": "CMS"
             },
             {
-                "name":"Python",
-                "level":50,
-                "category":"Languages"
+                "name": "Python",
+                "level": 50,
+                "category": "Languages"
             },
             {
-                "name":"FastAPI",
-                "level":50,
-                "category":"Frameworks"
+                "name": "FastAPI",
+                "level": 50,
+                "category": "Frameworks"
             },
             {
                 "name": "JQuery",
-                "level":50,
-                "category":"JS Library"
+                "level": 50,
+                "category": "JS Library"
             },
             {
                 "name": "Next.Js",
-                "level":50,
-                "category":"Frameworks"
+                "level": 50,
+                "category": "Frameworks"
             },
             {
                 "name": "D3/Chart.js",
-                "level":50,
-                "category":"JS Library"
+                "level": 50,
+                "category": "JS Library"
             },
-            {   
-                "name":"underscore",
-                "level":50,
-                "category":"JS Library"
+            {
+                "name": "underscore",
+                "level": 50,
+                "category": "JS Library"
             },
             {
                 "name": "Guttenberg",
-                "level":50,
-                "category":"CMS"
+                "level": 50,
+                "category": "CMS"
             },
             {
-                "name":"Putty",
-                "level":50,
-                "category":"Tools"
+                "name": "Putty",
+                "level": 50,
+                "category": "Tools"
             }
         ]
     },
@@ -233,25 +233,25 @@
             }
         ]
     },
-    "contact":{
-        "sectionTitle":"Contact Me",
+    "contact": {
+        "sectionTitle": "Contact Me",
         "sectionDescription": "Feel free to contact me for any queries or opportunities.",
-        "social":[
+        "social": [
             {
-                "name":"github",
-                "link":"https://github.com/gautam-jha/"
+                "name": "github",
+                "link": "https://github.com/gautam-jha/"
             },
             {
-                "name":"linkedin",
-                "link":"https://www.linkedin.com/in/gautam-jha/"
+                "name": "linkedin",
+                "link": "https://www.linkedin.com/in/gautam-jha/"
             },
             {
-                "name":"twitter",
-                "link":"https://twitter.com/gauti_san"
+                "name": "twitter",
+                "link": "https://twitter.com/gauti_san"
             },
             {
-                "name":"mail",
-                "link":"mailto:gautiii@live.in"
+                "name": "mail",
+                "link": "mailto:gautiii@live.in"
             }
         ]
     }

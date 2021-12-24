@@ -1,4 +1,3 @@
-
 .aboutContainer {
     padding: 20px 0;
     max-width: 1060px;
@@ -7,23 +6,22 @@
     align-items: center;
     justify-content: flex-end;
     @media screen and (max-width: 580px) {
-      padding: 0 20px;
+        padding: 0 20px;
     }
-    
-  }
-  .aboutContent{
+}
+.aboutContent {
     display: flex;
     gap: 40px;
     justify-content: center;
     align-items: center;
     @media screen and (max-width: 580px) {
-      flex-direction: column;
+        flex-direction: column;
     }
-    >img{
+    > img {
         height: 250px;
         width: 250px;
     }
-    >.aboutText{
+    > .aboutText {
         line-height: 1.3;
     }
-  }
+}
