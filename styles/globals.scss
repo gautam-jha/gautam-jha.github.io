@@ -221,11 +221,12 @@ header {
   top: 0;
   left: 0;
   width: 100%;
+  height: 90px;
   @media (min-width: 580px) {
     height: 115px;
   }
   z-index: 10;
-  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/123024/menutexture.png);
+  background-image: url(/header.png);
   background-position: center top;
   background-size: auto 200px;
   background-repeat: repeat-x;

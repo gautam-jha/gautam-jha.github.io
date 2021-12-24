@@ -1,7 +1,11 @@
-.bannerContainer{
+.bannerContainer {
   position: relative;
-  >.slider{
-    >canvas {
+  > .slider {
+    top: -115px;
+    @media screen and (max-width: 580px) {
+      margin-top: -90px;
+    }
+    > canvas {
       width: 100%;
       height: 100vh;
       @media screen and (max-width: 580px) {
@@ -9,24 +13,21 @@
       }
     }
   }
-  @media screen and (min-width: 580px) {
-    top: -115px;
-  }
-  .bannerInner{
+  .bannerInner {
     position: relative;
     padding: 10px;
     text-align: left;
   }
-  .bannerText{
+  .bannerText {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    
+
     @media screen and (max-width: 1024px) {
       min-width: 85vw;
     }
-    
+
     // &:before{
     //   position: absolute;
     //   content: '';
@@ -40,20 +41,21 @@
   }
 }
 
-.fullScreen{
+.fullScreen {
   height: 100vh;
 }
 
 .bannerText__heading1 {
   margin: 0px 0px 8px 4px;
   color: #c8f5ea;
-  font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
-  font-size: clamp(14px,5vw,16px);
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+  font-size: clamp(14px, 5vw, 16px);
   font-weight: 400;
   text-shadow: 1px 0 rgb(0 0 0 / 70%);
 }
 
-.bannerText__heading2, .bannerText__heading3 {
+.bannerText__heading2,
+.bannerText__heading3 {
   margin: 0px 0px 10px;
   font-weight: 600;
   color: #e0e3e9;
@@ -62,14 +64,17 @@
   text-shadow: 1px 0 rgb(0 0 0 / 70%);
 }
 
-.bannerText__heading3{
+.bannerText__heading3 {
   margin-top: 10px;
   color: #8892b0;
   line-height: 0.9;
   font-size: clamp(30px, 6vw, 60px);
 }
+.contactContainer{
+  text-align: center;
+}
 
-.footer{
+.footer {
   text-align: center;
   padding: 20px;
   margin-top: 80px;

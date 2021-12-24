@@ -39,11 +39,27 @@
         experiences: Experience[];
     }
 
+   export enum IconType {
+        linkedin = "linkedin",
+        github = "github",
+        twitter = "twitter",
+        mail = "mail",
+    }
+    interface Contact {
+        sectionTitle: string;
+        sectionDescription: string;
+        social:Array<{
+                name: IconType;
+                link: string;
+        }>
+    }
+
     interface Api {
         slider: Slider[];
         about: About;
         skills: Skills;
         work: Work;
+        contact: Contact;
     }
 
     export interface MockProp {
