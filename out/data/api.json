@@ -5,7 +5,9 @@
         "text3": "A Full-Stack Developer"
     },
     "slider": [
-       
+        {
+            "Picturehandle": "./slider/bg4.jpg"
+        },
         {
             "Picturehandle": "./slider/bg1.jpg"
         },
