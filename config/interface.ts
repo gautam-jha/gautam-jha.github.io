@@ -27,14 +27,13 @@
         company: string;
         position: string;
         website: string;
-        startDate: string;
-        endDate: string;
+        duration: string;
         logo: string;
-        summary: string;
+        description: string;
         highlights: string[];
     }
 
-    interface Work {
+    export interface Work {
         sectionTitle: string;
         sectionDescription: string;
         experiences: Experience[];

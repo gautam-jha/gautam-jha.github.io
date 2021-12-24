@@ -8,11 +8,13 @@ import { server } from "../config";
 import { MockProp } from "../config/interface";
 import { About } from "../components/About";
 import { Skill } from "../components/Skill";
+import Banner from "../components/Banner";
+import Experience from "../components/Experience";
 
 
 const Home = (props: MockProp) => {
 
-  const { data: { slider, about, skills } } = props;
+  const { data: { slider, about, skills, work } } = props;
 
   return (
     <div className={styles.container}>
@@ -28,19 +30,7 @@ const Home = (props: MockProp) => {
       <Header />
       <div className={styles.bannerContainer}>
         <div className={styles.slider}>
-          <WebglSlider
-            fps={25}
-            autoplay
-            effect={8} // give number between 1 to 8
-            slideSpeed={1.6}
-            data={slider}
-            autoplaySpeed={3000}
-            initialSlideIndex={0}
-            webglSliderApi={(ref: any) => {
-              // get access to slider's methods
-              console.log("ref", ref);
-            }}
-          />
+          <Banner slider={slider} />
         </div>
         <div className={styles.bannerText}>
           <div className={styles.bannerInner}>
@@ -55,9 +45,7 @@ const Home = (props: MockProp) => {
 
       <Skill {...skills} />
 
-      <div id="experiece" className={styles.fullScreen}>
-        {/* Exp */}
-      </div>
+      <Experience {...work}/>
       <footer className={styles.footer}>Developed by Gautam Jha</footer>
     </div>
   );

@@ -14,19 +14,11 @@ export const Skill = (props: Skills) => {
                     </div>
                     <div className={styles.skills__category}>
                     {skillCategory && skillCategory.map((category: string, index: number) => (
-                        <div className={styles.skills__container} key={index}>
+                        <div className={styles.skills__container} key={category}>
                             <h3 className={styles.skills__category}>{category}</h3>
                             <div className={styles.skills__list} key={index}>
                                 {skills && skills.filter((skill)=>skill.category === category).map((skill: SkillInt, index: number) => (
-                                    <div className={styles.skills__list__item} key={index}>
-                                        {/* <div className={styles.skills__list__item__icon}>
-                                    <img
-                                        src="http://placehold.jp/50x50.png"
-                                        width={50}
-                                        height={50}
-                                        alt="html"
-                                    />
-                                </div> */}
+                                    <div className={styles.skills__list__item} key={index+skill.name}>
                                         <div className={styles.skills__list__item__text}>
                                             <h4>{skill.name}</h4>
                                         </div>

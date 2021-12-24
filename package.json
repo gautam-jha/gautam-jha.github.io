@@ -10,8 +10,6 @@
     "export": "next export"
   },
   "dependencies": {
-    "@afiniti/webgl-slider": "0.0.4",
-    "gsap": "^3.9.0",
     "next": "12.0.7",
     "react": "17.0.2",
     "react-dom": "17.0.2",
@@ -21,6 +19,7 @@
   "devDependencies": {
     "@types/node": "17.0.2",
     "@types/react": "17.0.37",
+    "@types/three": "^0.135.0",
     "eslint": "8.5.0",
     "eslint-config-next": "12.0.7",
     "typescript": "4.5.4"

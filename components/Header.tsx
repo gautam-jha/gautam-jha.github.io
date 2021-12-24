@@ -19,7 +19,7 @@ export const Header = (props: Props) => {
         <div className="burger"></div>
         <nav className=''>
             <a href="#about">About Me</a>
-            <a href="#experience">Work Experience</a>
+            <a href="#experiece">Work Experience</a>
             <a href="#skills">Skill & Tech Exposure</a>
             <a href="#contact">Contact</a>
         </nav>
