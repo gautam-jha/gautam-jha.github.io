@@ -200,69 +200,31 @@
         "sectionDescription": "Here are some of the work experiences I've had.",
         "experiences": [
             {
-                "company": "Freelance",
-                "position": "Web Developer",
-                "website": "",
-                "startDate": "2018-01-01",
-                "endDate": "2018-12-31",
-                "logo": "",
-                "summary": "",
-                "highlights": [
-                    "",
-                    ""
-                ]
+                "company": "9 Yards Technologies",
+                "position": "Sr. Software Engineer",
+                "duration": "Aug 2021 - Present",
+                "description": "Working at SHL (Client), as front-end react developer & their projects for clients like IBM, Standard Charter Bank...",
+                "website": "https://www.9yardstechnologies.com/",
+                "logo": "./logo/9yards.png",
+                "highlights": []
             },
             {
-                "company": "Freelance",
-                "position": "Web Developer",
-                "website": "",
-                "startDate": "2018-01-01",
-                "endDate": "2018-12-31",
-                "summary": "",
-                "logo": "",
-                "highlights": [
-                    "",
-                    ""
-                ]
+                "company": "Amdocs",
+                "position": "UI Developer",
+                "website": "https://www.amdocs.com/",
+                "duration": "April 2020 - August 2021",
+                "logo": "./logos/amdocs.png",
+                "description": "Worked on Dataone Platform, mainly on revamping the design and archietechure of entire applications.",
+                "highlights": []
             },
             {
-                "company": "Freelance",
+                "company": "Experiencesaga",
                 "position": "Web Developer",
-                "website": "",
-                "startDate": "2018-01-01",
-                "endDate": "2018-12-31",
-                "summary": "",
-                "logo": "",
-                "highlights": [
-                    "",
-                    ""
-                ]
-            },
-            {
-                "company": "Freelance",
-                "position": "Web Developer",
-                "website": "",
-                "startDate": "2018-01-01",
-                "endDate": "2018-12-31",
-                "logo": "",
-                "summary": "",
-                "highlights": [
-                    "",
-                    ""
-                ]
-            },
-            {
-                "company": "Freelance",
-                "position": "Web Developer",
-                "website": "",
-                "startDate": "2018-01-01",
-                "endDate": "2018-12-31",
-                "logo": "",
-                "summary": "",
-                "highlights": [
-                    "",
-                    ""
-                ]
+                "website": "https://www.experiencesaga.com/",
+                "duration": "Aug 2018 - April 2020",
+                "description": "ExperienceSaga is a brand under ODM Entertainment Pvt Ltd, I Worked there as a wordpress developer and worked with AWS, Google Cloud, PHP Frameworks.",
+                "logo": "./logo/experiencesaga.png",
+                "highlights": []
             }
         ]
     }
