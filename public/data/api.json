@@ -14,6 +14,9 @@
         },
         {
             "Picturehandle": "./slider/bg3.jpg"
+        },
+        {
+            "Picturehandle": "./slider/bg4.jpg"
         }
     ],
     "about": {
