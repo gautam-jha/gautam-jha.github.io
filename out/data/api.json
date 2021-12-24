@@ -5,14 +5,15 @@
         "text3": "A Full-Stack Developer"
     },
     "slider": [
-        {
-            "Picturehandle": "./slider/bg3.jpg"
-        },
-        {
-            "videoHandle": "./slider/bg.mp4"
-        },
+       
         {
             "Picturehandle": "./slider/bg1.jpg"
+        },
+        {
+            "Picturehandle": "./slider/bg2.jpg"
+        },
+        {
+            "Picturehandle": "./slider/bg3.jpg"
         }
     ],
     "about": {
