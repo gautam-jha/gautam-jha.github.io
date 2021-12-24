@@ -1,5 +1,4 @@
 import React, { ReactElement } from 'react';
-import LinkedIn from '../assets/linkedin.svg';
 import { IconType } from '../config/interface';
 
 interface Props {
@@ -9,14 +8,6 @@ interface Props {
 export default function Icon({ type }: Props): ReactElement {
     return (
         <>
-            <svg
-                className={`icon icon-${type}`}
-                fill={type}
-                width={25}
-                height={25}
-            >
-                <use xlinkHref={`${LinkedIn}#icon-${type}`} />
-            </svg>
             {type === 'github' && (
                 <svg
                     height={24}
