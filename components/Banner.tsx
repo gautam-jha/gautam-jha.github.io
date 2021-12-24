@@ -10,6 +10,7 @@ export default function Banner({ slider }: Props): ReactElement {
     useEffect(() => {
         // instantiate a loader
         const loader = new THREE.ImageLoader();
+        THREE.Cache.enabled = true;
         let i = 0;
         setInterval(() => {
             const resource = slider[i];
@@ -43,11 +44,11 @@ export default function Banner({ slider }: Props): ReactElement {
                 },
             );
             
-            if (i === slider.length -1) {
+            i++;
+            if (i === slider.length) {
                 i = 0;
             }
             
-            i++;
         }, 5000);
     }, []);
 
