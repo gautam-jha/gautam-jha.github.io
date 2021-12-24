@@ -15,7 +15,7 @@ export const About = (props: AboutProp) => {
                                 return <><span>{item}</span><br /><br /></>;
                             })}
                         </p>
-                        <img src={aboutImage} alt="gautamjha" className={styles.aboutImage} />
+                        <img src={aboutImage} alt={sectionDescription.substring(0,20)} className={styles.aboutImage} />
                     </div>
                 </div>
             </div>
