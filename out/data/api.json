@@ -1,4 +1,9 @@
 {
+    "banner": {
+        "text1":"Hello, I am", 
+        "text2":"Gautam Jha.", 
+        "text3":"A Full-Stack Developer"
+    },
     "slider": [
         {
             "Picturehandle": "./slider/bg3.jpg"
