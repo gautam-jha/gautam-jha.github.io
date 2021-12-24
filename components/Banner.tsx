@@ -9,12 +9,14 @@ interface Props {
 export default function Banner({ slider }: Props): ReactElement {
     useEffect(() => {
         // instantiate a loader
+        const random = Math.floor(Math.random() * (slider.length));
+        const resource = slider[random];
+        const resourceUrl = resource?.Picturehandle;
         const loader = new THREE.ImageLoader();
-
         // load a image resource
         loader.load(
             // resource URL
-            slider[0].Picturehandle,
+            resourceUrl,
 
             // onLoad callback
             (image) => {

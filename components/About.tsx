@@ -15,11 +15,11 @@ export const About = (props: AboutProp) => {
                                 .split('\n\n')
                                 .map((item: string) => {
                                     return (
-                                        <>
+                                        <React.Fragment key={item+Math.random()}>
                                             <span>{item}</span>
                                             <br />
                                             <br />
-                                        </>
+                                        </React.Fragment>
                                     );
                                 })}
                         </p>

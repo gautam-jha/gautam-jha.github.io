@@ -242,7 +242,7 @@ html {
 }
 
 body {
-    background-color: #23272a;
+    background-color: #111111;
     color: white;
     /* overflow: hidden; */
 }
@@ -359,4 +359,15 @@ main {
     #skill {
         margin-bottom: 40px;
     }
+}
+
+h2{
+    margin-top: 10px;
+    color: #c8f5ea;
+    line-height: 0.9;
+    font-size: clamp(20px, 4vw, 40px);
+}
+
+#about, #skills, #experiece, #contact {
+    margin-top: 60px;
 }

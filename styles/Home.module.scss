@@ -79,3 +79,11 @@
     padding: 20px;
     margin-top: 80px;
 }
+
+.social__links{
+    padding: 3px;
+    margin-left: 10px;
+    >svg {
+        fill: #c8f5ea;
+    }
+}
