@@ -1,7 +1,7 @@
 .bannerContainer {
   position: relative;
   > .slider {
-    top: -115px;
+    margin-top: -115px;
     @media screen and (max-width: 580px) {
       margin-top: -90px;
     }

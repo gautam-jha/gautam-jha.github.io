@@ -14,7 +14,7 @@ import Icon from "../components/Icon";
 
 const Home = (props: MockProp) => {
   const {
-    data: { slider, about, skills, work, contact },
+    data: { slider, about, skills, work, contact, banner },
   } = props;
 
   return (
@@ -38,10 +38,10 @@ const Home = (props: MockProp) => {
         </div>
         <div className={styles.bannerText}>
           <div className={styles.bannerInner}>
-            <p className={styles.bannerText__heading1}>Hello, I am</p>
-            <h1 className={styles.bannerText__heading2}>{"Gautam Jha."}</h1>
+            <p className={styles.bannerText__heading1}>{banner?.text1}</p>
+            <h1 className={styles.bannerText__heading2}>{banner?.text2}</h1>
             <h3 className={styles.bannerText__heading3}>
-              {"A Full-Stack Developer"}
+              {banner?.text3}
             </h3>
           </div>
         </div>

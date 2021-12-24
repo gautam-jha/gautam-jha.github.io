@@ -60,6 +60,11 @@
         skills: Skills;
         work: Work;
         contact: Contact;
+        banner: {
+            text1: string;
+            text2: string;
+            text3: string;
+        };
     }
 
     export interface MockProp {
