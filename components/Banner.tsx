@@ -12,7 +12,8 @@ export default function Banner({ slider }: Props): ReactElement {
         const loader = new THREE.ImageLoader();
         THREE.Cache.enabled = true;
         let i = 0;
-        setInterval(() => {
+
+        const sliderLoader  = ():void => {
             const resource = slider[i];
             const resourceUrl = resource?.Picturehandle;
             // load a image resource
@@ -49,8 +50,10 @@ export default function Banner({ slider }: Props): ReactElement {
                 i = 0;
             }
             
-        }, 5000);
-    }, []);
+        };
+        sliderLoader();
+        setInterval(sliderLoader, 8000);
+    });
 
     return <canvas id="canvas"></canvas>;
 }
