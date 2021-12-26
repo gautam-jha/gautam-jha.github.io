@@ -53,11 +53,11 @@ export const Skill = (props: Skills) => {
                                                                         styles.skills__list__item__text
                                                                     }
                                                                 >
-                                                                    <h4>
+                                                                    <span>
                                                                         {
                                                                             skill.name
                                                                         }
-                                                                    </h4>
+                                                                    </span>
                                                                 </div>
                                                             </div>
                                                         ),

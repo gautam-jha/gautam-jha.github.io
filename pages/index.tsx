@@ -32,6 +32,49 @@ const Home = (props: MockProp) => {
                 />
                 <meta httpEquiv="content-language" content="en-gb" />
                 <link rel="icon" href="/favicon.ico" />
+                <script
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{
+                        __html: JSON.stringify({
+                            '@context': 'http://schema.org',
+                            '@type': 'Person',
+                            address: {
+                                '@type': 'PostalAddress',
+                                addressLocality: 'New Delhi',
+                                addressRegion: 'IN',
+                                postalCode: '110030',
+                                streetAddress: 'F-170 Ladosarai, New Delhi, India',
+                            },
+                            colleague: [
+                                'http://www.xyz.edu/students/alicejones.html',
+                                'http://www.xyz.edu/students/bobsmith.html',
+                            ],
+                            email: 'mailto:gautiii@live.com',
+                            image: 'gautamjha.jpg',
+                            jobTitle: 'Software Engineer',
+                            name: 'Gautam Jha',
+                            telephone: '(425) 123-4567',
+                            url: 'https://gautam-jha.github.io/',
+                        }),
+                    }}
+                />
+                <script
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{
+                        __html: JSON.stringify({
+                            '@context': 'https://schema.org/',
+                            '@type': 'WebSite',
+                            name: 'Gautam Jha | Full Stack Developer | Portfolio',
+                            url: 'https://gautam-jha.github.io/',
+                            potentialAction: {
+                                '@type': 'SearchAction',
+                                target: 'https://gautam-jha.github.io/?q={search_term_string}',
+                                'query-input':
+                                    'required name=search_term_string',
+                            },
+                        }),
+                    }}
+                />
             </Head>
             <Header />
             <div className={styles.bannerContainer}>

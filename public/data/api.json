@@ -21,7 +21,7 @@
     "about": {
         "aboutImage": "./gautamjha.jpg",
         "sectionTitle": "About Me",
-        "sectionDescription": "I am Gautam Jha, and I love to create Websites & Apps. Learning a new language or framework or wasting my time playing video games. \n\n I completed my bachelors in Technology at Delhi Technological University ( Formally Known D.C.E).  \n\n At the starting phase of my career I joined a few good startups such as Experiencesaga, Bookmyessay, Biorev, Incubsense. \n\n I have worked as a full-time employee at Amdocs, SHL, Collabera and worked with various technologies like Scylla, Cassandra, Elastic search, Postgresql etc. \n\n I have a great experience in WordPress Theme & Plugin Development, Gutenburg, LEMP, and MERN stack. Developed and delivered complex projects end to end at various organizations."
+        "sectionDescription": "I am Gautam Jha, and I love to create Websites & Apps. Learning a new language or framework or wasting my time playing video games. \n\n I completed my bachelors in Technology at Delhi Technological University ( Formally Known D.C.E).  \n\n At the starting phase of my career I joined a few good startups such as Experiencesaga, Bookmyessay, Biorev, Incubsense. \n\n I have worked as a full-time employee at Amdocs, SHL, Collabera and worked with various technologies like Scylla, Cassandra, Elastic search, Postgresql etc. \n\n I have a great experience in WordPress Theme & Plugin Development, Guttenberg, LEMP, and MERN stack. Developed and delivered complex projects end to end at various organizations."
     },
     "skills": {
         "sectionTitle": "Skills",
@@ -33,7 +33,10 @@
             "Version Control Systems",
             "Databases",
             "Tools",
-            "DevOps"
+            "DevOps",
+            "Web Servers",
+            "CMS",
+            "Operating Systems"
         ],
         "skills": [
             {
@@ -47,7 +50,7 @@
                 "category": "Web Technologies"
             },
             {
-                "name": "JavaScript",
+                "name": "JavaScript / TypeScript",
                 "level": 80,
                 "category": "Languages"
             },
@@ -67,24 +70,14 @@
                 "category": "Version Control Systems"
             },
             {
-                "name": "GitHub",
+                "name": "CVS",
                 "level": 60,
                 "category": "Version Control Systems"
             },
             {
-                "name": "Bitbucket",
+                "name": "GitHub / Gitlab /Bitbucket",
                 "level": 60,
                 "category": "Version Control Systems"
-            },
-            {
-                "name": "Gitlab",
-                "level": 60,
-                "category": "Version Control Systems"
-            },
-            {
-                "name": "WordPress",
-                "level": 60,
-                "category": "CMS"
             },
             {
                 "name": "PHP",
@@ -112,7 +105,7 @@
                 "category": "DevOps"
             },
             {
-                "name": "Gulp",
+                "name": "Gulp / Grunt",
                 "level": 50,
                 "category": "DevOps"
             },
@@ -141,26 +134,7 @@
                 "level": 50,
                 "category": "Web Technologies"
             },
-            {
-                "name": "Joomla",
-                "level": 50,
-                "category": "CMS"
-            },
-            {
-                "name": "Magento",
-                "level": 50,
-                "category": "CMS"
-            },
-            {
-                "name": "Shopify",
-                "level": 50,
-                "category": "CMS"
-            },
-            {
-                "name": "WooCommerce",
-                "level": 50,
-                "category": "CMS"
-            },
+
             {
                 "name": "Python",
                 "level": 50,
@@ -182,6 +156,11 @@
                 "category": "Frameworks"
             },
             {
+                "name": "Three.js",
+                "level": 50,
+                "category": "Frameworks"
+            },
+            {
                 "name": "D3/Chart.js",
                 "level": 50,
                 "category": "JS Library"
@@ -192,14 +171,119 @@
                 "category": "JS Library"
             },
             {
-                "name": "Guttenberg",
+                "name": "Putty",
+                "level": 50,
+                "category": "Tools"
+            },
+            {
+                "name": "SQL Developer",
+                "level": 50,
+                "category": "Tools"
+            },
+            {
+                "name": "Jira",
+                "level": 50,
+                "category": "Tools"
+            },
+            {
+                "name": "Confluence",
+                "level": 50,
+                "category": "Tools"
+            },
+            { 
+                "name": "Postman",
+                "level": 50,
+                "category": "Tools"
+            },
+            {
+                "name": "ElasticSearch",
+                "level": 50,
+                "category": "Databases"
+            },
+            {
+                "name": "Oracle",
+                "level": 50,
+                "category": "Databases"
+            },
+            {
+                "name": "Postgresql",
+                "level": 50,
+                "category": "Databases"
+            },
+            {
+                "name": "Scylla",
+                "level": 50,
+                "category": "Databases"
+            },
+            {
+                "name": "D3.js",
+                "level": 50,
+                "category": "JS Library"
+            },
+            {
+                "name": "Apache",
+                "level": 50,
+                "category": "Web Servers"
+            },
+            {
+                "name": "Nginx",
+                "level": 50,
+                "category": "Web Servers"
+            },
+            {
+                "name": "Litespeed",
+                "level": 50,
+                "category": "Web Servers"
+            },
+            {
+                "name": "Laravel",
+                "level": 50,
+                "category": "Frameworks"
+            },
+            {
+                "name": "CodeIgniter",
+                "level": 50,
+                "category": "Frameworks"
+            },
+            {
+                "name": "WordPress",
                 "level": 50,
                 "category": "CMS"
             },
             {
-                "name": "Putty",
+                "name": "Magento",
                 "level": 50,
-                "category": "Tools"
+                "category": "CMS"
+            },
+            {
+                "name": "Shopify",
+                "level": 50,
+                "category": "CMS"
+            },
+            {
+                "name": "Ubuntu / Debian",
+                "level": 50,
+                "category": "Operating Systems"
+            },
+            {
+                "name": "RedHat",
+                "level": 50,
+                "category": "Operating Systems"
+            },
+            {
+                "name": "Fedora",
+                "level": 50,
+                "category": "Operating Systems"
+            },
+            {
+                "name": "Arch Linux",
+                "level": 50,
+                "category": "Operating Systems"
+            },
+            {
+                "name": "Windows / Windows Server",
+                "level": 50,
+                "category": "Operating Systems"
             }
         ]
     },
