@@ -8,6 +8,7 @@ import { Skill } from '../components/Skill';
 import Banner from '../components/Banner';
 import Experience from '../components/Experience';
 import Icon from '../components/Icon';
+import StarWarsBanner from '../components/StarWarsBanner';
 
 const Home = (props: MockProp) => {
     const {
@@ -79,7 +80,7 @@ const Home = (props: MockProp) => {
             <Header />
             <div className={styles.bannerContainer}>
                 <div className={styles.slider}>
-                    <Banner slider={slider} />
+                    <StarWarsBanner />
                 </div>
                 <div className={styles.bannerText}>
                     <div className={styles.bannerInner}>
