@@ -16,34 +16,29 @@ export default function StarWarsBanner(): ReactElement {
 
         // GLTFLoader.load(
         let gltfRef: any = null;
+        setTimeout(() => {
+            sphere.load('/model/scene.glb', async function (gltf) {
+                gltf.scene.position.set(-0.21, 0.02, 0.02);
 
-        sphere.load('/model/scene.glb', function (gltf) {
-            // gltf.scene.traverse(function (child) {
-            //     if (child.isMesh) {
-            //         // child.material.map = texture;
-            //         child.material.needsUpdate = true;
-            //     }
-            // });
-            gltf.scene.position.set(-0.21, 0.02, 0.02);
+                gltf.scene.scale.set(0.002, 0.002, 0.002);
 
-            gltf.scene.scale.set(0.002, 0.002, 0.002);
+                gltf.scene.rotation.set(1, 2, -3);
 
-            gltf.scene.rotation.set(1, 2, -3);
+                gltfRef = gltf.scene;
+                scene.add(gltfRef);
 
-            gltfRef = gltf.scene;
-            scene.add(gltfRef);
+                let ev = new MouseEvent('mousemove', {
+                    view: window,
+                    bubbles: true,
+                    cancelable: true,
+                    clientX: 200,
+                    clientY: 400,
+                });
 
-            let ev = new MouseEvent('mousemove', {
-                view: window,
-                bubbles: true,
-                cancelable: true,
-                clientX: 200,
-                clientY: 400,
+                // Send event
+                document.querySelector('canvas')?.dispatchEvent(ev);
             });
-
-            // Send event
-            document.querySelector('canvas')?.dispatchEvent(ev);
-        });
+        }, 2000);
 
         const light = new THREE.AmbientLight(0x404040); // soft white light
         scene.add(light);
