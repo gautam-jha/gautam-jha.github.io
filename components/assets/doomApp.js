@@ -23,6 +23,7 @@ export const doomApp = {
 
         this.width = 500;
         this.height = 500;
+        this.dom.className = 'slider';
 
         this.load = function (json) {
             isVR = json.project.vr;
