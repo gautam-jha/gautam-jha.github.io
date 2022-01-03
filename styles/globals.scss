@@ -371,3 +371,9 @@ h2{
 #about, #skills, #experiece, #contact {
     margin-top: 60px;
 }
+#galaxy-banner{
+    height: 100vh;
+    @media screen and (max-width: 580px) {
+        max-height: 50vh;
+    }
+}

@@ -7,12 +7,19 @@ import { About } from '../components/About';
 import { Skill } from '../components/Skill';
 import Experience from '../components/Experience';
 import Icon from '../components/Icon';
-import Branching from '../components/Branching';
+import MrDoob from '../components/MrDoob';
 
 const Home = (props: MockProp) => {
     const {
         data: { slider, about, skills, work, contact, banner },
     } = props;
+
+    const banners = ['/mrdoob/galaxy.json', '/mrdoob/camera.json', '/mrdoob/idk.json'];
+
+    const getBanner = (): string => {
+        var hour = new Date().getMinutes() % banners.length;
+        return banners[hour];
+    };
 
     return (
         <div className={styles.container}>
@@ -43,7 +50,8 @@ const Home = (props: MockProp) => {
                                 addressLocality: 'New Delhi',
                                 addressRegion: 'IN',
                                 postalCode: '110030',
-                                streetAddress: 'F-170 Ladosarai, New Delhi, India',
+                                streetAddress:
+                                    'F-170 Ladosarai, New Delhi, India',
                             },
                             colleague: [
                                 'http://www.xyz.edu/students/alicejones.html',
@@ -79,7 +87,7 @@ const Home = (props: MockProp) => {
             <Header />
             <div className={styles.bannerContainer}>
                 <div className={styles.slider}>
-                    <Branching />
+                    <MrDoob path={getBanner()} />
                 </div>
                 <div className={styles.bannerText}>
                     <div className={styles.bannerInner}>

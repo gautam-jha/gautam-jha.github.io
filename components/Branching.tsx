@@ -1,5 +1,4 @@
 import React, { ReactElement } from 'react';
-import * as THREE from 'three';
 
 export default function Branching(): ReactElement {
     React.useEffect(() => {
@@ -10,7 +9,6 @@ export default function Branching(): ReactElement {
             'canvas.webgl',
         ) as HTMLCanvasElement;
 
-
         var WIDTH: number, HEIGHT: number;
 
         let context = canvas.getContext('2d');
@@ -19,7 +17,16 @@ export default function Branching(): ReactElement {
 
         init();
         setInterval(loop, 1000 / 120);
+        function startup() {
+            var el = canvas;
 
+            el.addEventListener('touchstart', onWindowMouseMove, false);
+            el.addEventListener('touchend', onWindowMouseMove, false);
+            el.addEventListener('touchcancel', onWindowMouseMove, false);
+            el.addEventListener('touchmove', onWindowMouseMove, false);
+        }
+
+        document.addEventListener('DOMContentLoaded', startup);
         function init() {
             WIDTH = window.innerWidth;
             HEIGHT = window.innerHeight;
@@ -77,7 +84,7 @@ export default function Branching(): ReactElement {
             }
         }
 
-        var Branch = function (this: any,x:any, y:any) {
+        var Branch = function (this: any, x: any, y: any) {
             this.life = 0;
             this.x = x;
             this.y = y;
