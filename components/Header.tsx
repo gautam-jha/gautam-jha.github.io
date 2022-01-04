@@ -1,6 +1,7 @@
 import React from 'react';
 
 export const Header = () => {
+    const [mobileMenu, setMobileMenu] = React.useState(false);
     return (
         <header>
             <div className="inner">
@@ -21,8 +22,11 @@ export const Header = () => {
                         />
                     </svg>
                 </div>
-                <div className="burger"></div>
-                <nav className="">
+                <div
+                    className={'burger ' + (mobileMenu ? 'close' : 'show')}
+                    onClick={() => setMobileMenu(!mobileMenu)}
+                ></div>
+                <nav className={mobileMenu ? 'show' : 'hide'}>
                     <a href="#about">About Me</a>
                     <a href="#experiece">Work Experience</a>
                     <a href="#skills">Skill & Tech Exposure</a>
