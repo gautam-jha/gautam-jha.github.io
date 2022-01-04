@@ -208,8 +208,6 @@ export const doomApp = {
             renderer = undefined;
         };
 
-        //
-
         function onDocumentKeyDown(event) {
             dispatch(events.keydown, event);
         }

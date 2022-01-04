@@ -357,27 +357,33 @@ main {
 @media screen and (max-width: 800px) {
     #about,
     #skill {
-        margin-bottom: 40px;
+        padding-bottom: 40px;
     }
 }
 
-h2{
-    margin-top: 10px;
+h2 {
+    margin-top: 0;
+    padding-top: 10px;
     color: #c8f5ea;
     line-height: 0.9;
     font-size: clamp(20px, 4vw, 40px);
 }
 
-#about, #skills, #experiece, #contact, footer {
+#about,
+#skills,
+#experiece,
+#contact,
+footer {
+    padding: auto 40px;
     padding-top: 60px;
     position: relative;
     width: 100%;
-    background-blend-mode: exclusion;
-    background: rgb(0 0 0 / 34%);
+    background: linear-gradient(178deg, rgb(58 58 58 / 22%), rgb(0 0 0 / 52%));
+    background-attachment: fixed;
 }
-#galaxy-banner{
+#galaxy-banner {
     height: 100vh;
     @media screen and (max-width: 580px) {
-        max-height: 50vh;
+        // max-height: 50vh;
     }
 }

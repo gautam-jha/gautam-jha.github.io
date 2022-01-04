@@ -18,6 +18,7 @@ export default function MrDoob(props: { path: string }): ReactElement {
                 player.load(JSON.parse(text));
                 player.setSize(window.innerWidth, window.innerHeight);
                 player.play();
+                container.innerHTML = '';
                 container.appendChild(player.dom);
 
                 window.addEventListener('resize', function () {

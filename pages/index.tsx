@@ -17,7 +17,7 @@ const Home = (props: MockProp) => {
     const banners = ['/mrdoob/galaxy.json', '/mrdoob/camera.json', '/mrdoob/idk.json'];
 
     const getBanner = (): string => {
-        var hour = new Date().getMinutes() % banners.length;
+        var hour = new Date().getHours() % banners.length;
         return banners[hour];
     };
 
