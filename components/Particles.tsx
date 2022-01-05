@@ -197,7 +197,7 @@ export const Particles = () => {
             };
             setTimeout(() => {
                 tick(); 
-            }, 2000);
+            }, 2500);
         }
     }, []);
     return (
