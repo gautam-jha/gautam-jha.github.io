@@ -7,19 +7,12 @@ import { About } from '../components/About';
 import { Skill } from '../components/Skill';
 import Experience from '../components/Experience';
 import Icon from '../components/Icon';
-import MrDoob from '../components/MrDoob';
+import { Particles } from '../components/Particles';
 
 const Home = (props: MockProp) => {
     const {
-        data: { slider, about, skills, work, contact, banner },
+        data: { about, skills, work, contact, banner },
     } = props;
-
-    const banners = ['/mrdoob/galaxy.json', '/mrdoob/camera.json', '/mrdoob/idk.json'];
-
-    const getBanner = (): string => {
-        var hour = new Date().getHours() % banners.length;
-        return banners[hour];
-    };
 
     return (
         <div className={styles.container}>
@@ -87,7 +80,7 @@ const Home = (props: MockProp) => {
             <Header />
             <div className={styles.bannerContainer}>
                 <div className={styles.slider}>
-                    <MrDoob path={getBanner()} />
+                    <Particles />
                 </div>
                 <div className={styles.bannerText}>
                     <div className={styles.bannerInner}>
