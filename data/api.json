@@ -4,20 +4,7 @@
         "text2": "Gautam Jha.",
         "text3": "A Full-Stack Developer"
     },
-    "slider": [
-        {
-            "Picturehandle": "./slider/bg4.jpg"
-        },
-        {
-            "Picturehandle": "./slider/bg1.jpg"
-        },
-        {
-            "Picturehandle": "./slider/bg2.jpg"
-        },
-        {
-            "Picturehandle": "./slider/bg3.jpg"
-        }
-    ],
+    "slider": [],
     "about": {
         "aboutImage": "./gautamjha.jpg",
         "sectionTitle": "About Me",
