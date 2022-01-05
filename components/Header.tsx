@@ -2,6 +2,18 @@ import React from 'react';
 
 export const Header = () => {
     const [mobileMenu, setMobileMenu] = React.useState(false);
+    React.useEffect(() => {
+        const links = document.querySelectorAll('.nav-link');
+        links.forEach((link) =>
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const sel:string = link.getAttribute('href') ?? '';
+                document.querySelector(sel)?.scrollIntoView({
+                    behavior: 'smooth',
+                });
+            }),
+        );
+    });
     return (
         <header>
             <div className="inner">
@@ -27,10 +39,18 @@ export const Header = () => {
                     onClick={() => setMobileMenu(!mobileMenu)}
                 ></div>
                 <nav className={mobileMenu ? 'show' : 'hide'}>
-                    <a href="#about">About Me</a>
-                    <a href="#experiece">Work Experience</a>
-                    <a href="#skills">Skill & Tech Exposure</a>
-                    <a href="#contact">Contact</a>
+                    <a className="nav-link" href="#about">
+                        About Me
+                    </a>
+                    <a className="nav-link" href="#experiece">
+                        Work Experience
+                    </a>
+                    <a className="nav-link" href="#skills">
+                        Skill & Tech Exposure
+                    </a>
+                    <a className="nav-link" href="#contact">
+                        Contact
+                    </a>
                 </nav>
                 {/* <a href="#" className="donate-link">Donate</a> */}
             </div>

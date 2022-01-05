@@ -195,8 +195,9 @@ export const Particles = () => {
                 // Call tick again on the next frame
                 window.requestAnimationFrame(tick);
             };
-
-            tick();
+            setTimeout(() => {
+                tick(); 
+            }, 1500);
         }
     }, []);
     return (

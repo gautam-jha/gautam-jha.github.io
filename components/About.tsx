@@ -10,19 +10,12 @@ export const About = (props: AboutProp) => {
                 <div className={styles.aboutInner}>
                     <h2 className={styles.aboutHeading}>{sectionTitle}</h2>
                     <div className={styles.aboutContent}>
-                        <p className={styles.aboutText}>
-                            {sectionDescription
-                                .split('\n\n')
-                                .map((item: string) => {
-                                    return (
-                                        <React.Fragment key={item+Math.random()}>
-                                            <span>{item}</span>
-                                            <br />
-                                            <br />
-                                        </React.Fragment>
-                                    );
-                                })}
-                        </p>
+                        <div
+                            className={styles.aboutText}
+                            dangerouslySetInnerHTML={{
+                                __html: sectionDescription,
+                            }}
+                        />
                         <img
                             src={aboutImage}
                             alt={sectionDescription.substring(0, 20)}

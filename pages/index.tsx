@@ -134,8 +134,7 @@ const Home = (props: MockProp) => {
 
 export default Home;
 
-Home.getInitialProps = async () => {
-    // fetch api.json and return data
+export const getStaticProps = async () => {
     let data = [];
     try {
         data = await fetch(server + '/data/api.json').then((res) => res.json());
@@ -143,6 +142,8 @@ Home.getInitialProps = async () => {
         console.log(e);
     }
     return {
-        data: data ?? [],
-    };
+        props: {
+            data: data ?? [],
+        },
+    }; 
 };
