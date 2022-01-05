@@ -52,7 +52,6 @@ export const Header = () => {
                         Contact
                     </a>
                 </nav>
-                {/* <a href="#" className="donate-link">Donate</a> */}
             </div>
         </header>
     );
