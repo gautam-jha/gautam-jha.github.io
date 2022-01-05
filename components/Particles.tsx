@@ -138,66 +138,64 @@ export const Particles = () => {
             document.addEventListener('mousemove', animateParticle);
 
             document.addEventListener('touchmove', animateParticle);
-
-
-            const tick = () => {
-                const elapsedTime = clock.getElapsedTime();
-
-                particleMesh.rotation.y += 0.0003;
-
-                if (mouse.x > 0 && mouse.y > 0) {
-                    particleMesh.position.x = mouse.x / sizes.width;
-                    particleMesh.position.y = mouse.y / sizes.height;
-                }
-
-                // Update objects
-                sphere.rotation.y = 0.5 * elapsedTime;
-                sphere.rotation.x = 0.01 * elapsedTime;
-
-                // if mouse is left of center
-                if (mouse.x < window.innerWidth / 2) {
-                    sphere.rotation.y =
-                        0.0005 *
-                        elapsedTime *
-                        (mouse.x - window.innerWidth / 2);
-                }
-
-                // if mouse is right of center
-                if (mouse.x > window.innerWidth / 2) {
-                    sphere.rotation.y =
-                        0.0005 *
-                        elapsedTime *
-                        (mouse.x - window.innerWidth / 2);
-                }
-
-                // if mouse is left of center
-                if (mouse.x < window.innerHeight / 2) {
-                    sphere.rotation.x =
-                        0.0005 *
-                        elapsedTime *
-                        (mouse.y - window.innerWidth / 2);
-                }
-
-                // if mouse is right of center
-                if (mouse.x > window.innerHeight / 2) {
-                    sphere.rotation.x =
-                        0.0005 *
-                        elapsedTime *
-                        (mouse.y - window.innerWidth / 2);
-                }
-
-                // Update Orbital Controls
-                // controls.update()
-
-                // Render
-                renderer.render(scene, camera);
-
-                // Call tick again on the next frame
-                window.requestAnimationFrame(tick);
-            };
             setTimeout(() => {
-                tick(); 
-            }, 2500);
+                const tick = () => {
+                    const elapsedTime = clock.getElapsedTime();
+
+                    particleMesh.rotation.y += 0.0003;
+
+                    if (mouse.x > 0 && mouse.y > 0) {
+                        particleMesh.position.x = mouse.x / sizes.width;
+                        particleMesh.position.y = mouse.y / sizes.height;
+                    }
+
+                    // Update objects
+                    sphere.rotation.y = 0.5 * elapsedTime;
+                    sphere.rotation.x = 0.01 * elapsedTime;
+
+                    // if mouse is left of center
+                    if (mouse.x < window.innerWidth / 2) {
+                        sphere.rotation.y =
+                            0.0005 *
+                            elapsedTime *
+                            (mouse.x - window.innerWidth / 2);
+                    }
+
+                    // if mouse is right of center
+                    if (mouse.x > window.innerWidth / 2) {
+                        sphere.rotation.y =
+                            0.0005 *
+                            elapsedTime *
+                            (mouse.x - window.innerWidth / 2);
+                    }
+
+                    // if mouse is left of center
+                    if (mouse.x < window.innerHeight / 2) {
+                        sphere.rotation.x =
+                            0.0005 *
+                            elapsedTime *
+                            (mouse.y - window.innerWidth / 2);
+                    }
+
+                    // if mouse is right of center
+                    if (mouse.x > window.innerHeight / 2) {
+                        sphere.rotation.x =
+                            0.0005 *
+                            elapsedTime *
+                            (mouse.y - window.innerWidth / 2);
+                    }
+
+                    // Update Orbital Controls
+                    // controls.update()
+
+                    // Render
+                    renderer.render(scene, camera);
+
+                    // Call tick again on the next frame
+                    window.requestAnimationFrame(tick);
+                };
+                tick();
+            }, 3000);
         }
     }, []);
     return (

@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 
 export const Header = () => {
@@ -7,8 +8,8 @@ export const Header = () => {
         links.forEach((link) =>
             link.addEventListener('click', (e) => {
                 e.preventDefault();
-                const sel:string = link.getAttribute('href') ?? '';
-                document.querySelector(sel)?.scrollIntoView({
+                const sel: string = link.getAttribute('href') ?? '';
+                document.querySelector(sel.replace('/',''))?.scrollIntoView({
                     behavior: 'smooth',
                 });
             }),
@@ -39,18 +40,25 @@ export const Header = () => {
                     onClick={() => setMobileMenu(!mobileMenu)}
                 ></div>
                 <nav className={mobileMenu ? 'show' : 'hide'}>
-                    <a className="nav-link" href="#about">
-                        About Me
-                    </a>
-                    <a className="nav-link" href="#experiece">
-                        Work Experience
-                    </a>
-                    <a className="nav-link" href="#skills">
-                        Skill & Tech Exposure
-                    </a>
-                    <a className="nav-link" href="#contact">
-                        Contact
-                    </a>
+                    <Link href="#about">
+                        <a className="nav-link">About Me</a>
+                    </Link>
+                    <Link href="#experiece">
+                        <a className="nav-link" href="#experiece">
+                            Work Experience
+                        </a>
+                    </Link>
+
+                    <Link href="#skills">
+                        <a className="nav-link" href="#skills">
+                            Skill & Tech Exposure
+                        </a>
+                    </Link>
+                    <Link href="#contact">
+                        <a className="nav-link" href="#contact">
+                            Contact
+                        </a>
+                    </Link>
                 </nav>
             </div>
         </header>
