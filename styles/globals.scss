@@ -396,3 +396,53 @@ footer {
         // max-height: 50vh;
     }
 }
+
+
+/**
+StarWars 
+*/
+
+#target{
+    position:absolute;
+    top:-3500px;
+    bottom:0;
+    left:0;
+    right:0;
+    overflow:hidden;
+    font-size:30px;
+    text-align:center;
+    font-family:sans-serif;
+}
+#target>div{
+    padding-top:3500px;
+    animation:autoscroll 40s linear;
+}
+#target>div:not(:active) {
+    padding-top:3500px;
+	animation: autoscroll 40s ease-in-out;
+}
+html:after{
+    content:'';
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background:linear-gradient(top,rgba(0,0,0,1),rgba(0,0,0,0) 100%);
+    background:linear-gradient(to bottom,rgba(0,0,0,1),rgba(0,0,0,0) 100%);
+    pointer-events:none;
+}
+
+// body{
+    
+   
+// }
+// html{
+//     color:yellow;
+//     background:black;
+// }
+@keyframes autoscroll{
+    to{
+        margin-top:-2000px;
+    } 
+}

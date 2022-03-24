@@ -83,7 +83,36 @@ const Home = (props: MockProp) => {
                     <Particles />
                 </div>
                 <div className={styles.bannerText}>
-                    <div className={styles.bannerInner}>
+                    <div id="target"><div>
+                        <h1 className={styles.bannerText__heading2} style={{marginTop:'60rem'}}>
+                            {banner?.text2}
+                        </h1>
+                        <h3 className={styles.bannerText__heading3} style={{marginBottom:'20rem'}}>
+                            {banner?.text3}
+                        </h3>
+                        A short time ago in VSCODE, I was working on a project <br />
+                        with the objective of creating a cool looking portfolio. <br />
+                        But with great ideas, comes great responsibility <br/> 
+                        
+                        Which is a complete mess. I wanted it to be cool, but there was a dark side <br />
+                        and I am taking about the HEX code(#E2EFFB), rgba sucks. <br />
+                        <br />
+                        <br />
+                        I decided to create a space in that darkness with three.js,<br />
+                        As soon as I completed it, millions of star was there on my screen. <br/>
+                        then I thought it will be great if I keep text as the Star Wars movie opening. <br />
+                        <br />
+                        By doing this I belived I can make few of the people waste a bit time of thier time <br /> 
+                        waiting to fully read this shit. xD Bazingaaa <br /> 
+                        <br /> 
+                        <br /> 
+                        <br /> 
+                        <br /> 
+                        <br /> 
+                        <h2>are you still waiting? you can scroll down, lol</h2>
+                        <p>or you can join the dark side by leaving the website over this.</p>
+                    </div></div>
+                    {/* <div className={styles.bannerInner}>
                         <p className={styles.bannerText__heading1}>
                             {banner?.text1}
                         </p>
@@ -93,7 +122,7 @@ const Home = (props: MockProp) => {
                         <h3 className={styles.bannerText__heading3}>
                             {banner?.text3}
                         </h3>
-                    </div>
+                    </div> */}
                 </div>
             </div>
 

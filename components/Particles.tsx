@@ -59,7 +59,7 @@ export const Particles = () => {
             particlesGeometry,
             particlesMaterial,
         );
-        scene.add(sphere, particleMesh);
+        scene.add(particleMesh);
         // scene.add()
 
         // Lights
@@ -148,45 +148,6 @@ export const Particles = () => {
                         particleMesh.position.x = mouse.x / sizes.width;
                         particleMesh.position.y = mouse.y / sizes.height;
                     }
-
-                    // Update objects
-                    sphere.rotation.y = 0.5 * elapsedTime;
-                    sphere.rotation.x = 0.01 * elapsedTime;
-
-                    // if mouse is left of center
-                    if (mouse.x < window.innerWidth / 2) {
-                        sphere.rotation.y =
-                            0.0005 *
-                            elapsedTime *
-                            (mouse.x - window.innerWidth / 2);
-                    }
-
-                    // if mouse is right of center
-                    if (mouse.x > window.innerWidth / 2) {
-                        sphere.rotation.y =
-                            0.0005 *
-                            elapsedTime *
-                            (mouse.x - window.innerWidth / 2);
-                    }
-
-                    // if mouse is left of center
-                    if (mouse.x < window.innerHeight / 2) {
-                        sphere.rotation.x =
-                            0.0005 *
-                            elapsedTime *
-                            (mouse.y - window.innerWidth / 2);
-                    }
-
-                    // if mouse is right of center
-                    if (mouse.x > window.innerHeight / 2) {
-                        sphere.rotation.x =
-                            0.0005 *
-                            elapsedTime *
-                            (mouse.y - window.innerWidth / 2);
-                    }
-
-                    // Update Orbital Controls
-                    // controls.update()
 
                     // Render
                     renderer.render(scene, camera);
