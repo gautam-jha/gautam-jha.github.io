@@ -19,11 +19,29 @@
             }
         }
     }
-    
+   
     .bannerInner {
-        position: relative;
+        position: fixed;
+        margin-top: -10000px;
         padding: 10px;
         text-align: left;
+        top: 50%;
+        left: 50%;
+        animation: showbanner 2s forwards 80s;
+
+    }
+    @keyframes showbanner {
+        to{
+            position: relative;
+            margin-top: 0px;
+            transform: translate(-35%, -50%);
+        } 
+    }
+    @keyframes notransf {
+        to{
+            transform-origin: 0% 0%;
+            transform: none;
+        } 
     }
     .bannerText {
         position:absolute;
@@ -33,10 +51,12 @@
         right:0;
         transform-origin:50% 100%;
         transform:perspective(300px) rotateX(20deg);
+        animation: notransf 2s forwards 80s;
         color: #ff6;
         h2{
             color: rgb(252, 252, 76);
         }
+        overflow: hidden;
     }
 }
 

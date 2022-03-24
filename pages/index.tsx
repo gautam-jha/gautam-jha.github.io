@@ -102,7 +102,7 @@ const Home = (props: MockProp) => {
                         As soon as I completed it, millions of star was there on my screen. <br/>
                         then I thought it will be great if I keep text as the Star Wars movie opening. <br />
                         <br />
-                        By doing this I belived I can make few of the people waste a bit time of thier time <br /> 
+                        By doing this I belived I can make few of the people waste a bit of thier time <br /> 
                         waiting to fully read this shit. xD Bazingaaa <br /> 
                         <br /> 
                         <br /> 
@@ -112,7 +112,7 @@ const Home = (props: MockProp) => {
                         <h2>are you still waiting? you can scroll down, lol</h2>
                         <p>or you can join the dark side by leaving the website over this.</p>
                     </div></div>
-                    {/* <div className={styles.bannerInner}>
+                    <div className={styles.bannerInner}>
                         <p className={styles.bannerText__heading1}>
                             {banner?.text1}
                         </p>
@@ -122,7 +122,7 @@ const Home = (props: MockProp) => {
                         <h3 className={styles.bannerText__heading3}>
                             {banner?.text3}
                         </h3>
-                    </div> */}
+                    </div>
                 </div>
             </div>
 

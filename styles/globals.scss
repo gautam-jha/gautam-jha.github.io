@@ -415,12 +415,12 @@ StarWars
 }
 #target>div{
     padding-top:3500px;
-    animation:autoscroll 40s linear;
+    animation:autoscroll 80s linear;
 }
-#target>div:not(:active) {
-    padding-top:3500px;
-	animation: autoscroll 40s ease-in-out;
-}
+// #target>div:not(:active) {
+//     padding-top:3500px;
+// 	animation: autoscroll 80s ease-in-out;
+// }
 html:after{
     content:'';
     position:absolute;

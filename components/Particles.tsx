@@ -42,11 +42,11 @@ export const Particles = () => {
 
         // Materials
         const material = new THREE.PointsMaterial({
-            size: 0.007,
+            size: 0.0075,
         });
 
         const particlesMaterial = new THREE.PointsMaterial({
-            size: 0.002,
+            size: 0.0025,
             map: star,
             transparent: true,
             color: '#e2effb',
