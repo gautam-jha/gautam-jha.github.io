@@ -78,91 +78,7 @@ const Home = (props: MockProp) => {
                 />
             </Head>
             <Header />
-            <main className={styles.gridLayout}>
-                <div className={styles.avatar}>
-                    <img
-                        src="https://gautam-jha.github.io/gautamjha.jpg"
-                        alt="self"
-                        className="mainImg"
-                    />
-                </div>
-                <div>
-                    <h1>
-                        Hi, I'm
-                        <span>Gautam Jha</span> 👋🏻
-                    </h1>
-                    <h2>I'm a Full Stack Developer.</h2>
-                    <ul>
-                        <li>
-                            <span
-                                aria-label="emoji"
-                                role="img"
-                                className="Home_emoji__3a-vL"
-                            >
-                                ☕️
-                            </span>{' '}
-                            Motivated by coffee
-                        </li>
-                        <li>
-                            <span
-                                aria-label="emoji"
-                                role="img"
-                                className="Home_emoji__3a-vL"
-                            >
-                                🇺🇸
-                            </span>{' '}
-                            Based in New Delhi, IN
-                        </li>
-                        <li>
-                            <span
-                                aria-label="emoji"
-                                role="img"
-                                className="Home_emoji__3a-vL"
-                            >
-                                💼
-                            </span>{' '}
-                            Sr Frontend Engineer at SHL / 9 Yards Technology
-                        </li>
-                        <li>
-                            <span
-                                aria-label="emoji"
-                                role="img"
-                                className="Home_emoji__3a-vL"
-                            >
-                                ✉️
-                            </span>{' '}
-                            gotham@outlook.in
-                        </li>
-                    </ul>
-                    <div className="Home_socials__lyYul">
-                        <a href="https://facebook.com/">
-                            <i
-                                className="fa fa-facebook"
-                                aria-hidden="true"
-                            ></i>
-                        </a>
-                        <a href="https://instagram.com/">
-                            <i
-                                className="fa fa-instagram"
-                                aria-hidden="true"
-                            ></i>
-                        </a>
-                        <a href="https://linkedin.com">
-                            <i
-                                className="fa fa-linkedin"
-                                aria-hidden="true"
-                            ></i>
-                        </a>
-                        <a href="https://medium.com">
-                            <i className="fa fa-medium" aria-hidden="true"></i>
-                        </a>
-                        <a href="https://twitter.com">
-                            <i className="fa fa-twitter" aria-hidden="true"></i>
-                        </a>
-                    </div>
-                </div>
-            </main>
-            {/* <div className={styles.bannerContainer}>
+            <div className={styles.bannerContainer}>
                 <div className={styles.slider}>
                     <Particles />
                 </div>
@@ -238,7 +154,7 @@ const Home = (props: MockProp) => {
                             ))}
                     </div>
                 </div>
-            )} */}
+            )}
 
             <footer className={styles.footer}>Developed by Gautam Jha</footer>
         </div>
@@ -258,5 +174,5 @@ export const getStaticProps = async () => {
         props: {
             data: data ?? [],
         },
-    };
+    }; 
 };

@@ -18,7 +18,7 @@ export const About = (props: AboutProp) => {
                         />
                         <img
                             src={aboutImage}
-                            alt={sectionDescription.substring(0, 20)}
+                            alt={sectionDescription?.substring(0, 20)}
                             className={styles.aboutImage}
                         />
                     </div>

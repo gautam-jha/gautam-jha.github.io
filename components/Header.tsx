@@ -4,16 +4,16 @@ import React from 'react';
 export const Header = () => {
     const [mobileMenu, setMobileMenu] = React.useState(false);
     React.useEffect(() => {
-        const links = document.querySelectorAll('.nav-link');
-        links.forEach((link) =>
-            link.addEventListener('click', (e) => {
-                e.preventDefault();
-                const sel: string = link.getAttribute('href') ?? '';
-                document.querySelector(sel.replace('/',''))?.scrollIntoView({
-                    behavior: 'smooth',
-                });
-            }),
-        );
+        // const links = document.querySelectorAll('.nav-link');
+        // links.forEach((link) =>
+        //     link.addEventListener('click', (e) => {
+        //         e.preventDefault();
+        //         const sel: string = link.getAttribute('href') ?? '';
+        //         document.querySelector(sel.replace('/',''))?.scrollIntoView({
+        //             behavior: 'smooth',
+        //         });
+        //     }),
+        // );
     });
     return (
         <header>
@@ -40,7 +40,7 @@ export const Header = () => {
                     onClick={() => setMobileMenu(!mobileMenu)}
                 ></div>
                 <nav className={mobileMenu ? 'show' : 'hide'}>
-                    <Link href="#about">
+                    {/* <Link href="#about">
                         <a className="nav-link">About Me</a>
                     </Link>
                     <Link href="#experiece">
@@ -53,10 +53,10 @@ export const Header = () => {
                         <a className="nav-link" href="#skills">
                             Skill & Tech Exposure
                         </a>
-                    </Link>
-                    <Link href="#contact">
-                        <a className="nav-link" href="#contact">
-                            Contact
+                    </Link> */}
+                    <Link href="/gautam-jha.pdf">
+                        <a className="nav-link" target="_blank">
+                            Download Resume
                         </a>
                     </Link>
                 </nav>

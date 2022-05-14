@@ -1,5 +1,9 @@
 @import url(https://fonts.googleapis.com/css?family=Droid+Sans:400,700);
-
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
 .bannerContainer {
     font-family: "Droid Sans", arial, verdana, sans-serif;
     position: relative;
@@ -19,7 +23,7 @@
             }
         }
     }
-   
+
     .bannerInner {
         position: fixed;
         margin-top: -10000px;
@@ -105,4 +109,57 @@
     >svg {
         fill: #c8f5ea;
     }
+}
+
+
+.gridLayout{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex: 1 1;
+    font-size: 1.5rem;
+    position: relative;
+    z-index: 1;
+    width: 90vw;
+    margin: 1rem auto;
+    @media screen and (min-width:940px) {
+        flex-direction: row;
+        justify-content: center;
+    }
+    & .avatar {
+        width: 50vh;
+        height: 50vh;
+        margin-right: 3rem;
+        margin-bottom: none;
+        border-radius: 50%;
+        opacity: .9;
+        transition: opacity .7s;
+        margin-bottom: 1rem;
+        overflow: hidden;
+        box-shadow: 0 1rem 2rem rgb(0 0 0 / 40%);
+    }
+
+    h1 {
+        font-size: 3rem;
+        text-align: left;
+        span{
+            // background: linear-gradient(135deg, rgb(185, 85, 211), rgb(247, 10, 7)) text;
+            // -webkit-text-fill-color: transparent;
+        }
+    }
+    h2{
+        font-size: 2rem;
+        text-align: left;
+    }
+    ul{
+        list-style-type: none;
+        padding: 0.8rem;
+        li{
+            font-size: 1.2rem;
+            line-height: 1.8;
+        }
+    }
+
+
 }
