@@ -54,7 +54,7 @@ export const Header = () => {
                             Skill & Tech Exposure
                         </a>
                     </Link> */}
-                    <Link href="/gautam-jha.pdf">
+                    <Link href="/Gautam_Jha_Full_Stack_Developer.pdf">
                         <a className="nav-link" target="_blank">
                             Download Resume
                         </a>

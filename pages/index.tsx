@@ -88,10 +88,10 @@ const Home = (props: MockProp) => {
                 </div>
                 <div>
                     <h1>
-                        Hi, I'm
+                        {'Hi, I\'m'}
                         <span>Gautam Jha</span> 👋🏻
                     </h1>
-                    <h2>I'm a Full Stack Developer.</h2>
+                    <h2>{'I\'m a Full Stack Developer.'}</h2>
                     <ul>
                         <li>
                             <span
