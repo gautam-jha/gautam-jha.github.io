@@ -484,14 +484,14 @@ strong {
     }
 }
 
-.intro__hello,
+
 .intro__tagline {
     font-size: 2.5rem;
 }
 
 @media screen and (max-width: 1024px) {
 
-    .intro__hello,
+    
     .intro__tagline {
         font-size: 2.25rem;
     }
@@ -499,7 +499,7 @@ strong {
 
 @media screen and (max-width: 768px) {
 
-    .intro__hello,
+   
     .intro__tagline {
         font-size: 2rem;
     }
@@ -507,7 +507,6 @@ strong {
 
 @media screen and (max-width: 550px) {
 
-    .intro__hello,
     .intro__tagline {
         font-size: 1.75rem;
     }
@@ -515,7 +514,6 @@ strong {
 
 @media screen and (max-width: 360px) {
 
-    .intro__hello,
     .intro__tagline {
         font-size: 1.5rem;
     }
@@ -523,13 +521,11 @@ strong {
 
 @media screen and (max-width: 330px) {
 
-    .intro__hello,
     .intro__tagline {
         font-size: 1.4rem;
     }
 }
 
-.intro__hello .emoji,
 .intro__tagline .emoji {
     width: 40px;
     height: 40px;
@@ -537,7 +533,6 @@ strong {
 
 @media screen and (max-width: 1024px) {
 
-    .intro__hello .emoji,
     .intro__tagline .emoji {
         width: 35px;
         height: 35px;
@@ -546,7 +541,6 @@ strong {
 
 @media screen and (max-width: 768px) {
 
-    .intro__hello .emoji,
     .intro__tagline .emoji {
         width: 30px;
         height: 30px;
@@ -555,34 +549,13 @@ strong {
 
 @media screen and (max-width: 360px) {
 
-    .intro__hello .emoji,
+
     .intro__tagline .emoji {
         width: 25px;
         height: 25px;
     }
 }
 
-.intro__hello {
-    font-weight: 300;
-}
-
-.intro__hello .wave-hand {
-    background-image: url(/img/emoji/wave.png);
-    margin-left: 10px;
-    cursor: pointer;
-}
-
-.intro__hello .wave-hand.animated {
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-}
-
-.intro__hello .wave-hand.wave {
-    -webkit-animation-name: wave;
-    animation-name: wave;
-}
 
 @-webkit-keyframes wave {
     from {
