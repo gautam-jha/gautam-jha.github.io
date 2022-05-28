@@ -1,18 +1,28 @@
 import Head from 'next/head';
 import styles from '../styles/Home.module.scss';
-import { Header } from '../components/Header';
-import { server } from '../config';
 import { MockProp } from '../config/interface';
-import { About } from '../components/About';
-import { Skill } from '../components/Skill';
-import Experience from '../components/Experience';
-import Icon from '../components/Icon';
-import { Particles } from '../components/Particles';
+import dynamic from 'next/dynamic';
+import { useEffect } from 'react';
+import {threeWave} from '../helpers/three-wave';
+
+const SideHeader = dynamic(()=> import('../components/SideHeader'), {
+    ssr:false,
+});
+
 
 const Home = (props: MockProp) => {
     const {
-        data: { about, skills, work, contact, banner },
+        data,
     } = props;
+
+    useEffect(()=>{
+        const three = threeWave();
+        three.init();
+
+        return () => {
+            three.destroy();
+        };
+    }, []);
 
     return (
         <div className={styles.container}>
@@ -77,186 +87,87 @@ const Home = (props: MockProp) => {
                     }}
                 />
             </Head>
-            <Header />
-            <main className={styles.gridLayout}>
-                <div className={styles.avatar}>
-                    <img
-                        src="https://gautam-jha.github.io/gautamjha.jpg"
-                        alt="self"
-                        className="mainImg"
-                    />
-                </div>
+            <SideHeader />
+            <section className="section skills" data-sr-id="2" style={{visibility: 'visible',
+                opacity: 1,
+                transition: 'opacity 0.6s cubic-bezier(0.694, 0, 0.335, 1) 0s'}}>
+                <div className="section__title">Skills</div>
                 <div>
-                    <h1>
-                        {'Hi, I\'m'}
-                        <span>Gautam Jha</span> 👋🏻
-                    </h1>
-                    <h2>{'I\'m a Full Stack Developer.'}</h2>
-                    <ul>
-                        <li>
-                            <span
-                                aria-label="emoji"
-                                role="img"
-                                className="Home_emoji__3a-vL"
-                            >
-                                ☕️
-                            </span>{' '}
-                            Motivated by coffee
-                        </li>
-                        <li>
-                            <span
-                                aria-label="emoji"
-                                role="img"
-                                className="Home_emoji__3a-vL"
-                            >
-                                🇺🇸
-                            </span>{' '}
-                            Based in New Delhi, IN
-                        </li>
-                        <li>
-                            <span
-                                aria-label="emoji"
-                                role="img"
-                                className="Home_emoji__3a-vL"
-                            >
-                                💼
-                            </span>{' '}
-                            Sr Frontend Engineer at SHL / 9 Yards Technology
-                        </li>
-                        <li>
-                            <span
-                                aria-label="emoji"
-                                role="img"
-                                className="Home_emoji__3a-vL"
-                            >
-                                ✉️
-                            </span>{' '}
-                            gotham@outlook.in
-                        </li>
-                    </ul>
-                    <div className="Home_socials__lyYul">
-                        <a href="https://facebook.com/">
-                            <i
-                                className="fa fa-facebook"
-                                aria-hidden="true"
-                            ></i>
-                        </a>
-                        <a href="https://instagram.com/">
-                            <i
-                                className="fa fa-instagram"
-                                aria-hidden="true"
-                            ></i>
-                        </a>
-                        <a href="https://linkedin.com">
-                            <i
-                                className="fa fa-linkedin"
-                                aria-hidden="true"
-                            ></i>
-                        </a>
-                        <a href="https://medium.com">
-                            <i className="fa fa-medium" aria-hidden="true"></i>
-                        </a>
-                        <a href="https://twitter.com">
-                            <i className="fa fa-twitter" aria-hidden="true"></i>
-                        </a>
+                    <div className="section__content">
+                        <div className="skillz">
+                            <div className="skillz__category">
+                                <div className="skillz__category__label">Languages</div>
+                                <ul>
+                                    <li className="skillz__category__item">PHP, Python</li>
+                                    <li className="skillz__category__item">JavaScript, NodeJS</li>
+                                    <li className="skillz__category__item">Shell Scripting, Typescript</li>
+                                </ul>
+                            </div>
+                            <div className="skillz__category">
+                                <div className="skillz__category__label">Frameworks</div>
+                                <ul>
+                                    <li className="skillz__category__item">ReactJS</li>
+                                    <li className="skillz__category__item">React Native</li>
+                                    <li className="skillz__category__item">FastAPI, Laravel</li>
+                                    <li className="skillz__category__item">Codeigniter</li>
+                                </ul>
+                            </div>
+                            <div className="skillz__category">
+                                <div className="skillz__category__label">Tools</div>
+                                <ul>
+                                    <li className="skillz__category__item">VCS - Github/Gitlab/Bitbucket</li>
+                                    <li className="skillz__category__item">Terminal, Putty, Docker</li>
+                                    <li className="skillz__category__item">GCP / AWS</li>
+                                </ul>
+                            </div>
+                            <div className="skillz__category">
+                                <div className="skillz__category__label">CMS</div>
+                                <ul>
+                                    <li className="skillz__category__item">WordPress, Shopify</li>
+                                    <li className="skillz__category__item">OJS</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="section__content">
+                        <div className="skillz">
+                            <div className="skillz__category">
+                                <div className="skillz__category__label">Databases</div>
+                                <ul>
+                                    <li className="skillz__category__item">MongoDB, Firebase, Scylladb</li>
+                                    <li className="skillz__category__item">MySql, Postgresql</li>
+                                    <li className="skillz__category__item">Oracle, Microsoft SQL Server</li>
+                                    <li className="skillz__category__item">ElasticSearch</li>
+                                </ul>
+                            </div>
+                            <div className="skillz__category">
+                                <div className="skillz__category__label">Operating System</div>
+                                <ul>
+                                    <li className="skillz__category__item">Linux (Debian/Arch/RedHat)</li>
+                                    <li className="skillz__category__item">MacOS</li>
+                                    <li className="skillz__category__item">Windows (10/11/Server)</li>
+                                </ul>
+                            </div>
+                            <div className="skillz__category">
+                                <div className="skillz__category__label">UI Frameworks</div>
+                                <ul>
+                                    <li className="skillz__category__item">Tailwindcss</li>
+                                    <li className="skillz__category__item">Material UI, Bootstrap</li>
+                                    <li className="skillz__category__item">Chakra UI</li>
+                                </ul>
+                            </div>
+                            <div className="skillz__category">
+                                <div className="skillz__category__label">Others</div>
+                                <ul>
+                                    <li className="skillz__category__item">Next.js</li>
+                                    <li className="skillz__category__item">GraphQL, Gutenberg, WP-REST</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </main>
-            {/* <div className={styles.bannerContainer}>
-                <div className={styles.slider}>
-                    <Particles />
-                </div>
-                <div className={styles.bannerText}>
-                    <div id="target"><div>
-                        <h1 className={styles.bannerText__heading2} style={{marginTop:'60rem'}}>
-                            {banner?.text2}
-                        </h1>
-                        <h3 className={styles.bannerText__heading3} style={{marginBottom:'20rem'}}>
-                            {banner?.text3}
-                        </h3>
-                        A short time ago in VSCODE, I was working on a project <br />
-                        with the objective of creating a cool looking portfolio. <br />
-                        But with great ideas, comes great responsibility <br/> 
-                        
-                        Which is a complete mess. I wanted it to be cool, but there was a dark side <br />
-                        and I am taking about the HEX code(#E2EFFB), rgba sucks. <br />
-                        <br />
-                        <br />
-                        I decided to create a space in that darkness with three.js,<br />
-                        As soon as I completed it, millions of star was there on my screen. <br/>
-                        then I thought it will be great if I keep text as the Star Wars movie opening. <br />
-                        <br />
-                        By doing this I belived I can make few of the people waste a bit of thier time <br /> 
-                        waiting to fully read this shit. xD Bazingaaa <br /> 
-                        <br /> 
-                        <br /> 
-                        <br /> 
-                        <br /> 
-                        <br /> 
-                        <h2>are you still waiting? you can scroll down, lol</h2>
-                        <p>or you can join the dark side by leaving the website over this.</p>
-                    </div></div>
-                    <div className={styles.bannerInner}>
-                        <p className={styles.bannerText__heading1}>
-                            {banner?.text1}
-                        </p>
-                        <h1 className={styles.bannerText__heading2}>
-                            {banner?.text2}
-                        </h1>
-                        <h3 className={styles.bannerText__heading3}>
-                            {banner?.text3}
-                        </h3>
-                    </div>
-                </div>
-            </div>
-
-            <About {...about} />
-
-            <Skill {...skills} />
-
-            <Experience {...work} />
-
-            {contact && (
-                <div id="contact">
-                    <div className={styles.contactContainer}>
-                        <h2 className={styles.experienceHeading}>
-                            {contact.sectionTitle}
-                        </h2>
-                        <p>{contact.sectionDescription}</p>
-                        {contact?.social &&
-                            contact?.social?.map((social) => (
-                                <a
-                                    className={styles.social__links}
-                                    key={social.name}
-                                    href={social.link}
-                                    target="_blank"
-                                    rel="noreferrer"
-                                    title={social.name}
-                                >
-                                    <Icon type={social.name} />
-                                </a>
-                            ))}
-                    </div>
-                </div>
-            )} */}
-
-            <footer className={styles.footer}>Developed by Gautam Jha</footer>
+            </section>
         </div>
     );
 };
-
 export default Home;
-
-export const getStaticProps = async () => {
-    let data = [];
-    try {
-        data = await fetch(server + '/data/api.json').then((res) => res.json());
-    } catch (e) {
-        console.log(e);
-    }
-    return {
-        props: {
-            data: data ?? [],
-        },
-    };
-};
