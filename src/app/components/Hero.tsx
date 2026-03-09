@@ -7,15 +7,15 @@ import { FileText, Mail, Github, Linkedin, ArrowRight } from 'lucide-react';
 import { CanvasGame } from './CanvasGame';
 
 const greetings = [
-  "Konnichiwa", 
-  "Hello", 
-  "Hola", 
-  "Bonjour", 
-  "Namaste", 
-  "Ciao", 
-  "Ni Hao",
-  "Hallo",
-  "Anyoung"
+  "Konnichiwa 🙏", 
+  "Hello 🙏", 
+  "Hola 🙏", 
+  "Bonjour 🙏", 
+  "Namaste 🙏", 
+  "Ciao 🙏", 
+  "Ni Hao 🙏",
+  "Hallo 🙏",
+  "Anyoung 🙏"
 ];
 
 function TypewriterGreeting() {
@@ -94,7 +94,6 @@ export function Hero() {
               transition={{ repeat: Infinity, duration: 2.5, repeatDelay: 1 }}
               className="inline-block origin-[70%_70%] cursor-default"
             >
-              🙏
             </motion.span>
             <br />
             I&apos;m <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-indigo-500">Gautam Jha</span>
