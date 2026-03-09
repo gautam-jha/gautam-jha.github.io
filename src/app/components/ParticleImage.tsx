@@ -1,3 +1,5 @@
+'use client';
+
 import React, { useRef, useEffect, useState } from 'react';
 
 export function ParticleImage({ src }: { src: string }) {
@@ -41,7 +43,7 @@ export function ParticleImage({ src }: { src: string }) {
       driftX: number; driftY: number; delay: number;
       isSnapping: boolean;
 
-      constructor(x: number, y: number, r: number, g: number, b: number, a: number) {
+      constructor(x: number, y: number, r: number, g: number, b: number, a: number, canvasWidth: number) {
         // Start perfectly assembled behind the image layer
         this.x = x;
         this.y = y;
@@ -57,7 +59,7 @@ export function ParticleImage({ src }: { src: string }) {
         this.driftX = Math.random() * 3 - 1.5;
         this.driftY = -Math.random() * 4 - 1; 
         // Delay before a particle reacts to the snap (creates a wave effect)
-        this.delay = (x / canvas.width) * 40 + Math.random() * 20;
+        this.delay = (x / canvasWidth) * 40 + Math.random() * 20;
         this.isSnapping = false;
       }
 
@@ -124,7 +126,7 @@ export function ParticleImage({ src }: { src: string }) {
             const r = imageData.data[index];
             const g = imageData.data[index + 1];
             const b = imageData.data[index + 2];
-            particles.push(new Particle(x, y, r, g, b, a / 255));
+            particles.push(new Particle(x, y, r, g, b, a / 255, canvas.width));
           }
         }
       }

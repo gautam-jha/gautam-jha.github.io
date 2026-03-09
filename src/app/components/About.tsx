@@ -1,3 +1,5 @@
+'use client';
+
 import React, { useRef, useState } from 'react';
 import { motion, useMotionValue, useSpring, useTransform } from 'motion/react';
 import { SUMMARY } from '../data';
@@ -94,7 +96,7 @@ export function About() {
             >
               <div className="absolute -inset-1 rounded-2xl bg-gradient-to-r from-cyan-500 to-indigo-500 opacity-25 group-hover:opacity-60 blur-xl transition duration-500" style={{ transform: "translateZ(-50px)" }}></div>
               <div className="relative aspect-[4/5] w-full rounded-2xl overflow-hidden shadow-2xl bg-slate-100 dark:bg-slate-800 border-2 border-white/10" style={{ transform: "translateZ(50px)" }}>
-                  <ParticleImage src={profileImage} />
+                  <ParticleImage src={profileImage || '/gautam-jha.jpg'} />
                 
                 {/* Simulated Glass/Glare overlay */}
                 <div className="absolute inset-0 bg-gradient-to-tr from-white/0 via-white/20 to-white/0 opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none z-30" />

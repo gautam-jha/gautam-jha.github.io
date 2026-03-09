@@ -1,3 +1,5 @@
+'use client';
+
 import React, { useEffect, useRef, useState } from 'react';
 import { SUMMARY } from '../data';
 import { Volume2, VolumeX, XCircle } from 'lucide-react';

@@ -1,3 +1,5 @@
+'use client';
+
 import React, { useState, useEffect } from 'react';
 import { motion } from 'motion/react';
 import { ParticleNetwork } from './ParticleNetwork';
@@ -95,7 +97,7 @@ export function Hero() {
               🙏
             </motion.span>
             <br />
-            I'm <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-indigo-500">Gautam Jha</span>
+            I&apos;m <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-indigo-500">Gautam Jha</span>
           </motion.h1>
           
           <motion.p 
@@ -113,7 +115,7 @@ export function Hero() {
             transition={{ duration: 0.5, delay: 0.3 }}
             className="mt-6 border-l-4 border-cyan-500 pl-4 text-slate-500 dark:text-slate-400 italic max-w-2xl mx-auto lg:mx-0"
           >
-            "The greatest teacher, Failure is" ~ Yoda
+            &ldquo;The greatest teacher, Failure is&rdquo; ~ Yoda
           </motion.blockquote>
           
           <motion.div 
